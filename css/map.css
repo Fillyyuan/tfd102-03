@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+}
+
+/* 主要內容 */
+
+.main{
+    /* width: 1200px; */
+    min-width: 1200px;
+    margin: 0 auto;
+    /* border: 1px solid green; */
+}
+
+.main > p{
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 100px;
+    padding: 0;
+    border-bottom: 5px solid #EAFA86;
+    
+}
+
+.map-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    /* column-gap: 20px; */
+    position: relative;
+    margin-bottom: 100px;
+    
+    
+}
+
+.map-container a img{
+    width: 950px;
+    display: block;
+        
+}
+
+.map_line{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.map_line div a img{
+    width: 170px;
+    display: block;
+    border-radius: 30px;
+    
+}
+
+.line img{
+    position: absolute;
+    width: 950px;
+    top: 0;
+    left: 0;
+    display: none;    
+}
+
+.line p{
+    position: absolute;
+    top: -60px;
+    left: 190px;
+    display: none;
+    font-size: 20px;          
+}
+
+.fam{
+    position: absolute;
+    margin: 0;
+    top: 0;
+    right: 90px;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 170px;
+    color: black;
+    display: none;
+}
+
+.cou{
+    position: absolute;
+    margin: 0;
+    top: 170px;
+    right: 90px;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 170px;
+    color: black;
+    display: none;
+}
+
+.sin{
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+    right: 90px;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 170px;
+    color: black;
+    display: none;
+}
+
+.line-fam:hover .line img{
+    display: block;
+}
+
+.line-cou:hover .line img{
+    display: block;
+}
+
+.line-sin:hover .line img{
+    display: block;
+}
+
+.line-fam:hover .line p{
+    display: block;
+}
+
+.line-cou:hover .line p{
+    display: block;
+}
+
+.line-sin:hover .line p{
+    display: block;
+}
+
+.line-fam:hover a img{
+    opacity: .4;     
+}
+
+.line-cou:hover a img{
+    opacity: .4;     
+}
+
+.line-sin:hover a img{
+    opacity: .4;     
+}
+
+.line-fam:hover a p{
+    display: block;
+}
+
+.line-cou:hover a p{
+    display: block;
+}
+
+.line-sin:hover a p{
+    display: block;
+}
+
+.header ul > li:nth-child(2) > div > a{
+    color: #EAFA86;
+}

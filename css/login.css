@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+}
+
+.main{
+    /* width: 1200px; */
+    min-width: 1200px;
+    margin: 0 auto;
+    /* border: 1px solid green; */
+}
+
+.sub1 > p, .sub2 > p{
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    border-bottom: 10px solid #EAFA86;
+}
+
+.sub-con{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sub1, .sub2{
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px 100px;    
+    align-items: center;
+    padding: 50px;      
+}
+
+label{
+    font-size: 24px;
+}
+
+input{
+    font-size: 24px;
+    
+}
+
+.sub-con button{
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 50px;
+    border: none;
+    width: 50%;
+    height: 50%;
+    justify-self: center;
+    background-color: #A07B14;
+    color: white;
+}
+
+button:hover{
+    color: #EAFA86;
+}
+
+.sub1{
+    background-image: url("../images/inlogin/1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.sub2{
+    background-image: url("../images/inlogin/2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center    
+}
+
+.sub2 .forque{
+    position: relative;
+}
+
+label.que::after{
+    content: "";
+    /* border: 1px solid blue; */
+    width: 20px;
+    height: 20px;
+    /* display: inline-block; */
+    position: absolute;
+    bottom: 0;
+    background-image: url("../images/inlogin/que.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.header .login a svg{
+    fill: #EAFA86;
+}
+

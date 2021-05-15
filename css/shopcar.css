@@ -1,0 +1,43 @@
+.btt{
+    border: 5px solid #A07B14;
+    background-color: white;
+    width: 250px;
+    border-radius: 20px;
+    padding: 10px;
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 140px;
+    z-index: 999;
+}
+.btt > p{
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 5px solid #EAFA86;
+    margin: 0;
+    padding: 0;
+}
+.btt-c{
+    display: grid;
+    grid-template-columns: 100px 100px 1fr;
+    column-gap: 20px;
+    margin: 5px 0 5px 0;
+    border-bottom: 2px solid black;    
+}
+.btt-in > p{
+    margin: 0;
+    padding: 0;
+}
+.btt-c img{
+    width: 100px;
+}
+.btt-end{
+    text-align: right;
+}
+.btt-end button{
+    border-radius: 20px;
+    width: 50px;
+    background-color: #A07B14;
+    color: white;
+    /* border: none;     */
+}

@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+
+.main{
+    /* width: 1200px; */
+    min-width: 1200px;
+    margin: 0 auto;
+    /* border: 1px solid green; */
+}
+
+.main div.map{
+    margin-top: 100px;
+    margin-bottom: 50px;
+   
+}
+
+.map img{
+    display: block;
+    width: 1000px;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+
+.main > p{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.main .line{
+    border: 1px solid #EAFA86;
+    height: 5px;
+    background-color: #EAFA86;
+    border-radius: 360px;
+    margin-bottom: 50px;
+}
+
+.ann{
+    background-image: url("../images/inmaptem/Group\ 201.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: 100%;    */
+}
+
+
+.ann{
+    display: grid;
+    grid-template-columns: auto; 
+    gap: 40px;      
+}
+
+.ann :nth-child(2n){
+    justify-content: center;
+}
+
+.ann :nth-child(3), .ann :nth-child(7){
+    justify-content: flex-end;
+}
+
+
+
+.example{
+    display: flex;
+    font-size: 16px;
+    align-items: flex-start;
+    
+}
+
+.example pre{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.example img{
+    width: 200px;
+    height: 200px;
+    margin-right: 50px;
+}
+
+.header ul > li:nth-child(2) > div > a{
+    color: #EAFA86;
+}
+
+.header ul > li:nth-child(2) > div > ul:nth-child(2) div li a{
+    color: #EAFA86;
+}
+

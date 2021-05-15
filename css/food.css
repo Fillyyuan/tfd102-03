@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+}
+
+.main{
+    /* width: 1200px; */
+    min-width: 1200px;
+    margin: 0 auto;
+    /* border: 1px solid green; */
+}
+
+.main > p{
+    font-size: 36px;
+    font-weight: bold;
+    border-bottom: 10px solid #EAFA86;
+    margin-top: 100px;    
+}
+
+.food1{
+    display: grid;
+    grid-template-columns: auto 650px 1fr;
+    grid-template-rows: 200px;
+    gap: 20px;
+    /* border: 1px solid red; */
+    position: relative;
+
+}
+
+.food2{
+    display: grid;
+    grid-template-columns: 1fr 650px auto;
+    grid-template-rows: 200px;
+    gap: 20px;
+    position: relative;
+}
+
+.tex{    
+    align-self: flex-end;
+    /* border: 1px solid green; */
+    overflow: hidden;
+    
+}
+
+.food2 .tex{
+    text-align: right;
+    overflow: hidden;
+}
+
+.food1 .tex p{
+    padding: 30px 0px 30px 220px;
+    background-color: #EAFA86;
+    margin: 0;    
+    border-radius: 120px;
+    position: relative;
+    left: -450px;    
+}
+
+.f1-ani{
+    animation-name: left;
+    animation-duration: 2s;
+    animation-fill-mode:forwards;
+}
+
+@keyframes left {
+    0%{
+        left: -450px;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+.food2 .tex p{
+    padding: 30px 220px 30px 0px;
+    background-color: #EAFA86;
+    margin: 0;    
+    border-radius: 120px;
+    position: relative;    
+    right: -450px; 
+}
+
+.f2-ani{
+    animation-name: right;
+    animation-duration: 2s;
+    animation-fill-mode:forwards;
+}
+
+@keyframes right {
+    0%{
+        right: -450px;
+    }
+    100%{
+        right: 0px;
+    }
+}
+
+.tex p::first-line{
+    font-size: 24px;    
+}
+
+.food1 .tex img{
+    position: absolute;
+    top: 0;
+    left: 120px;
+}
+
+.food2 img:first-child{
+    position: absolute;
+    right: 120px;
+}
+
+.food2 .tex p > img{
+    position: relative;
+    left: -500px;
+}
+
+.food2 .tex p a{
+    position: relative;
+    right: 200px;
+    top: 20px;
+    /* border: 1px solid red;  */
+} 
+
+.food2 .tex p a img{    
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.food1 .tex p a{
+    position: relative;
+    right: 70px;
+    top: 20px;
+    /* border: 1px solid red;  */
+} 
+
+.food1 .tex p a img{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+
+.drink-group1{
+    display: grid;
+    grid-template-columns: auto 3fr auto 4fr 1fr;
+    column-gap: 30px;
+    margin-bottom: 50px;
+}
+
+.drink-group2{
+    display: grid;
+    grid-template-columns: 1fr auto 3fr auto 4fr;
+    column-gap: 30px;
+    margin-bottom: 100px;
+}
+
+.dr-tex{
+    align-self: flex-end;
+}
+
+.dr-tex p::first-line{
+    font-size: 24px;    
+}
+
+.dr-tex p{
+    font-size: 16px;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.dr-tex a img{
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: 0 0 0 80%;
+    /* transform: translateX(-110%); */
+}
+
+.drink-group1 div img, .drink-group2 div img{
+    display: block;
+}
+
+.header ul > li:nth-child(3) a{
+    color: #EAFA86;
+}
+

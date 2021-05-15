@@ -1,0 +1,410 @@
+*{
+    box-sizing: border-box;
+}
+/* 主要內容 */
+
+.main{
+    /* width: 1200px; */
+    min-width: 1200px;
+    margin: 0 auto;
+    /* border: 1px solid green; */
+}
+
+.new{
+    /* border: 1px solid blue; */
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.new img{
+    width: 1200px;
+    transform: scale(0.8);
+    border-radius: 50px;
+    display: block;
+}
+
+.about_us{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.svg{
+    width: 350px;    
+}
+.svg img{
+    display: flex;
+    margin: 0 auto;
+    transform: scale(0.8);
+    animation-name: large;
+    animation-duration: 5s; 
+    animation-iteration-count: infinite;   
+}
+
+@keyframes large {
+    0% {
+        transform: scale(0.8);
+    }
+    25% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    75% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.8);
+    }
+}
+
+div.svg p.title{
+    font-size: 30px;
+    text-align: center;
+}
+
+div.svg p.content{
+    font-size: 20px;
+    text-align: center;
+}
+
+.slogan{
+    /* border: 1px solid blue; */
+    margin-top: 150px;
+    border-radius: 150px 150px 150px 150px;    
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;    
+    width: 1200px;
+    background-image: url("../images/homeaboutus/2.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    background-position: center;
+    
+}
+
+
+
+/* 路線 */
+.route{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+div.route > p{
+    /* border: 1px solid red; */
+    font-size: 36px;    
+    margin-top: 160px;
+    margin-bottom: 100px;
+    font-weight: bold;
+    height: 100px;
+    background-image: url("../images/homeroute/fiani.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.family, .couple, .single{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    
+    align-items: center;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.family img, .couple img, .single img{
+    width: 300px;
+}
+
+.forwalk > p{
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 60px;    
+}
+
+.forwalk p.f-tit{
+    font-size: 30px;
+    padding: 0;
+    border-bottom: 5px solid #eafa86;   
+}
+
+.forwalk{
+    position: relative;
+    /* border: 1px solid red; */    
+}
+
+.walk{
+    /* border: 1px solid blue; */
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    width: 50px;
+    height: 45px; 
+    overflow: hidden;   
+}
+
+.walk img{
+    width: 150px;
+    position: absolute;
+    animation-name: walking;
+    animation-duration: 0.8s;
+    animation-timing-function: steps(3, end);
+    animation-iteration-count: infinite;
+    /* border: 1px solid green; */
+}
+
+@keyframes walking{
+    0%{
+        left: 0px;
+    }
+    100%{
+        left: -160px;
+    }
+}
+
+/* 餐廳 */
+
+.food > p{
+    font-size: 36px;    
+    margin-top: 160px;
+    margin-bottom: 100px;
+    font-weight: bold;
+    height: 100px;
+    background-image: url("../images/homeroute/secani.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.food > a > img{
+    border-radius: 100px;    
+    display: block;
+    width: 960px;
+    margin: 0 auto;
+    /* border: 1px solid blue; */
+}
+
+.food-img a img{
+    /* border: 5px solid blue; */
+    width: 140px; 
+    float: left;
+    margin: 0 5px; 
+    border-radius: 30px;      
+}
+
+.food-img a img:hover{
+    transform: scale(1.2);
+}
+
+.food-img{
+    /* border: 1px solid black; */
+    text-align: center; 
+    position: absolute;
+    top: 25px; 
+    width: 170%; 
+    transition: 2s;    
+}
+
+input{
+    display: none;
+}
+
+.meal{
+    width: 450px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    /* border: 1px solid purple; */
+    overflow: hidden;
+    position: relative;        
+}
+
+.meal label{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 1px solid black;
+    bottom: 0;
+    border-radius: 100%; 
+}
+
+.meal label:nth-of-type(1){
+    left:160px;
+}
+.meal label:nth-of-type(2){
+    left:200px;
+}
+.meal label:nth-of-type(3){
+    left:240px;
+}
+.meal label:nth-of-type(4){
+    left:280px;
+}
+
+.meal input:nth-of-type(1):checked~.food-img{
+    left:-1%;
+}
+.meal input:nth-of-type(2):checked~.food-img{
+    left:-34%;
+}
+.meal input:nth-of-type(3):checked~.food-img{
+    left:-68%;
+}
+.meal input:nth-of-type(4):checked~.food-img{
+    left:-1%;
+}
+
+.meal input:checked + label{
+    background: #A07B14;    
+}
+
+.meal-con{
+    display: grid;
+    grid-template-columns: 1fr auto 500px auto 1fr;
+    justify-items: center;
+    align-items: flex-end;    
+}
+
+.food-a1 img{
+    height: 80px;
+}
+
+
+/* 商品 */
+div.product > p{
+    /* border: 1px solid red; */
+    font-size: 36px;    
+    margin-top: 160px;
+    font-weight: bold;
+    height: 100px;
+    background-image: url("../images/homeroute/fiani.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.hotgroup{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    background-image: url("../images/homeproduct/8.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;    
+}
+
+.hot{
+    position: relative;
+}
+
+/* .hot a{
+    position: relative;
+    display: inline-block;
+    border: 1px solid brown;
+    z-index: 22;
+} */
+
+.hot a img{
+    width: 200px;
+    display: block;
+    border-radius: 50px 50px 50px 0;
+      
+    /* border: 1px solid red;  */
+}
+
+.hot p img{
+    position: absolute;
+    width: 80px;
+    top: -87px;
+    left: 100px;
+          
+}
+
+.hot p{
+    margin: 0;
+    position: absolute;
+    /* border: 1px solid red; */
+    left: 0;
+    bottom: 0;
+    padding: 5px 30px 5px 60px;
+    color: white;
+    background-color: #A07B14;
+    border-radius: 100px;
+    width: 172px;
+    z-index: -1;
+       
+}
+
+.hot:hover p{
+    left: 70%;
+    transition: 2s;
+}
+
+.hot:hover p img{
+    left: 70px;    
+    transition: 2s;
+}
+
+
+.slogan2{
+    /* border: 1px solid blue; */
+    margin-top: 150px;
+    border-radius: 150px 150px 150px 150px;    
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;    
+    width: 1200px;
+    background-image: url("../images/homeaboutus/4.png");
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    /* background-size: cover;     */
+    background-position: center;        
+}
+
+.slogan2 p{
+    color: white;
+    
+}
+
+/* 動物認養 */
+div.animal_adopt{
+    column-count: 3;
+    column-gap: 20px;
+    margin-top: 160px;
+    margin-bottom: 100px;
+    height: 900px;
+    /* column-fill: auto; */
+}
+
+div.animal_adopt div{
+    margin-bottom: 20px;
+}
+
+div.animal_adopt div img{
+    width: 100%;
+    border-radius: 30px;
+}
+
+/* div.animal_adopt div img:hover{
+    width: 500px;
+}有問題 */
+
+
+

@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+
+.main{
+    /* width: 1200px; */
+    min-width: 1200px;
+    margin: 0 auto;
+    /* border: 1px solid green; */
+}
+
+.main > p{
+    font-size: 36px;
+    font-weight: bold;
+    border-bottom: 10px solid #EAFA86;
+    margin-top: 100px;
+    width: 1060px;
+}
+
+.food, .product{
+    margin-left: 50px;
+}
+
+.food > p, .product > p{
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 10px solid #EAFA86;
+    width: 1000px;
+}
+
+.food-con, .product-con{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: flex-start;
+    text-align: center;
+    column-gap: 30px;
+    row-gap: 10px;
+    font-size: 20px;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.food-con .cb, .product-con .cb{
+    display: none;    
+}
+
+.cb + label::before{
+    content: "";
+    background-image: url("../images/incenter/uncheck.png");
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cb:checked + label::before{
+    background-image: url("../images/incenter/checked.png");
+}
+
+.tic{
+    transform: scale(0.8);
+}
+
+.adopt-con{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+    margin-top: 64px;
+}
+
+.adopt{
+    width: 200px;
+    display: flex;
+    flex-direction: column;        
+}
+
+.p1{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+.exchange{
+    align-self: flex-end;
+}
+
+.exchange .img1{
+    height: 30px;
+}
+
+.header .login a svg{
+    fill: #EAFA86;
+}
+
+div.p_center a{
+    color: #EAFA86;
+}
+
+

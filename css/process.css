@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+}
+
+.main{
+    /* width: 1200px; */
+    min-width: 1200px;
+    margin: 0 auto;
+    /* border: 1px solid green; */
+}
+
+.process{
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    width: 350px;
+    justify-content: space-evenly;
+    border: 3px solid #A07B14;
+    border-radius: 20px;
+
+}
+
+.process li{
+    font-size: 20px;
+    padding: 5px 10px 5px 5px;
+    border-radius: 0 20px 20px 0;
+    border: 3px solid #A07B14;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+.process li:nth-child(5){
+    border-right: none;
+}
+
+.step1, .step2, .step3, .step4, .step5{
+    border: 1px solid red;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.step1 select{
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+}
+.step1 label{
+    border: 1px solid blue;
+    font-size: 24px;
+}
+
+.step1 textarea{
+    resize: none;
+    font-size: 20px;
+}
+
+/* 第二階段 */
+
+.step2 p{
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.step2 label{
+    font-size: 24px;
+}
+
+.forque{
+    position: relative;    
+}
+
+input{
+    font-size: 20px;
+    width: 200px;
+    
+}
+
+label.que::after{
+    content: "";
+    border: 1px solid blue;
+    width: 20px;
+    height: 20px;    
+    position: absolute;
+    bottom: 0;
+    background-image: url("../images/inlogin/que.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* 第三階段 */
+
+.step3{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;    
+}
+
+.step3 label{
+    font-size: 24px;
+    align-self: flex-start;    
+}
+
+.step3 button{
+    font-size: 20px;
+    width: 150px;
+}
+
+/* 第四階段 */
+
+.step4{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;    
+}
+
+.step4 label{
+    font-size: 24px;
+      
+}
+
+.step4 button{
+    font-size: 20px;
+    width: 150px;
+}
+
+/* 第五階段 */
+
+.step5{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;    
+}
+
+.step5 label{
+    font-size: 24px;      
+}
+
+.step5 button{
+    font-size: 20px;
+    width: 150px;
+}
+
+.step5 img{
+    width: 20px;
+    align-self: flex-end;
+}
+

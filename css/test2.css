@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+.about_us{
+    border: 1px solid red;
+    margin: 0 auto;
+    margin-top: 2000px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+ 
+  .an{
+      animation: 2s large;
+  }
+
+  @keyframes large {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.5);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

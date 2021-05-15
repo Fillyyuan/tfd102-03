@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+
+.main{
+    /* width: 1200px; */
+    min-width: 1200px;
+    margin: 0 auto;
+    /* border: 1px solid green; */
+}
+
+.main > .line{
+    border: 1px solid #EAFA86;
+    height: 10px;
+    background-color: #EAFA86;
+    border-radius: 360px;
+    margin-bottom: 50px;
+}
+
+.main > p{
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    margin-top: 100px;   
+}
+
+.p_inn p{
+    display: inline-block;
+    margin: 0;
+}
+
+.p_inn img{
+    display: block; 
+      
+}
+
+.p_inn{
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+}
+
+.p_inn svg{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.product{
+    display: grid;
+    grid-template-columns: 230px 230px 230px 230px;
+    justify-content: center;
+    justify-items: center;
+    gap: 50px;
+    margin-bottom: 100px;    
+}
+
+.header ul > li:nth-child(4) a{
+    color: #EAFA86;
+}
+
+
+
+

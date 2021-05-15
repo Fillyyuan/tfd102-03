@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+}
+
+/* 主要內容 */
+.main{
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid green;
+}
+
+.main div.map{
+    margin-top: 100px;   
+}
+
+.map img{
+    display: block;
+    width: 1000px;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+
+/* 動物圖像 */
+.animal-ann .line{
+    border: 1px solid #EAFA86;
+    height: 5px;
+    background-color: #EAFA86;
+    border-radius: 360px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.photo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     
+}
+
+.animal-ann button{
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    justify-content: center;
+    column-gap: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    background: none;
+    width: 780px;
+    position: relative;
+}
+
+.animal-ann button img{
+    width: 150px;
+}
+
+.animal-ann button p{
+    position: absolute;
+    top: 0;
+    margin: 0;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    background-color: white;
+    opacity: .7;   
+    display: none;    
+}
+
+button div:hover p{
+    display: block;
+}
+
+
+/* 導覽列 */
+.header ul > li:nth-child(2) > div ul:last-child div li a{
+    color: #EAFA86;
+}
+
+.header ul > li:nth-child(2) > div > a{
+    color: #EAFA86;
+}
+
+
+/* 註解欄位 */
+.example{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    display: none;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 28%;
+    background-color: white;
+    border-radius: 50px;
+    border: 3px solid #75673F;
+    
+}
+
+.example img{
+    width: 200px;
+    height: 200px;
+    margin-right: 50px;
+}
+
+.example p{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.example pre{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.example .line-e{
+    border: 1px solid #EAFA86;
+    height: 5px;
+    background-color: #EAFA86;
+    border-radius: 360px;
+}
+
+.animal-ann p{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    margin-left: 100px;
+}
