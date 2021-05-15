@@ -57,7 +57,7 @@
 
 .f1-ani{
     animation-name: left;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-fill-mode:forwards;
 }
 
@@ -81,7 +81,7 @@
 
 .f2-ani{
     animation-name: right;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-fill-mode:forwards;
 }
 

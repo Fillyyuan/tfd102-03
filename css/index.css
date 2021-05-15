@@ -390,6 +390,7 @@ div.animal_adopt{
     margin-top: 160px;
     margin-bottom: 100px;
     height: 900px;
+    text-align: center;
     /* column-fill: auto; */
 }
 
@@ -399,12 +400,10 @@ div.animal_adopt div{
 
 div.animal_adopt div img{
     width: 95%;
-    border-radius: 30px;
+    border-radius: 30px;    
 }
 
-/* div.animal_adopt div img:hover{
-    width: 500px;
-}有問題 */
+
 
 
 
