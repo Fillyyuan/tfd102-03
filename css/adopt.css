@@ -94,7 +94,7 @@
     margin-top: 100px;
 }
 
-.header ul li:nth-child(5) div > a{
+.header ul li:nth-child(5) > a{
     color: #EAFA86;
 }
 
