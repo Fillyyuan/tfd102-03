@@ -21,6 +21,7 @@
     transform: scale(0.8);
     border-radius: 50px;
     display: block;
+    margin: 0 auto;
 }
 
 .about_us{
@@ -84,7 +85,8 @@ div.svg p.content{
     background-repeat: no-repeat;
     background-size: cover;    
     background-position: center;
-    
+    margin: 0 auto;
+    margin-top: 150px;
 }
 
 
@@ -375,7 +377,9 @@ div.product > p{
     /* background-attachment: fixed; */
     background-repeat: no-repeat;
     /* background-size: cover;     */
-    background-position: center;        
+    background-position: center;
+    margin: 0 auto;
+    margin-top: 150px;        
 }
 
 .slogan2 p{
