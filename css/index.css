@@ -8,11 +8,12 @@
     min-width: 1200px;
     margin: 0 auto;
     /* border: 1px solid green; */
+    background-image: url("../images/bgset/bg02.png");
 }
 
 .new{
     /* border: 1px solid blue; */
-    margin-top: 100px;
+    padding-top: 100px;
     margin-bottom: 150px;
 }
 

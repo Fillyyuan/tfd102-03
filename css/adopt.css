@@ -7,6 +7,7 @@
     min-width: 1200px;
     margin: 0 auto;
     /* border: 1px solid green; */
+    background-image: url("../images/bgset/bg02.png");
 }
 
 .an-img{
@@ -87,11 +88,11 @@
 }
 
 .adopt{
-    margin-bottom: 100px;
+    padding-bottom: 100px;
 }
 
 .adopt:nth-child(1){
-    margin-top: 100px;
+    padding-top: 100px;
 }
 
 .header ul li:nth-child(5) > a{

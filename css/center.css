@@ -7,13 +7,15 @@
     min-width: 1200px;
     margin: 0 auto;
     /* border: 1px solid green; */
+    background-image: url("../images/bgset/bg02.png");
 }
 
 .main > p{
     font-size: 36px;
+    margin: 0;
     font-weight: bold;
     border-bottom: 10px solid #EAFA86;
-    margin-top: 100px;
+    padding-top: 100px;
     width: 1060px;
 }
 
@@ -65,7 +67,7 @@
 .adopt-con{
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
     margin-top: 64px;
 }
 

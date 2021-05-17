@@ -8,10 +8,11 @@
     min-width: 1200px;
     margin: 0 auto;
     /* border: 1px solid green; */
+    background-image: url("../images/bgset/bg02.png");
 }
 
 .main div.map{
-    margin-top: 100px;   
+    padding-top: 100px;   
 }
 
 .map img{
@@ -64,7 +65,8 @@
     line-height: 150px;
     background-color: white;
     opacity: .7;   
-    display: none;    
+    display: none; 
+    border-radius: 100%;   
 }
 
 button div:hover p{
@@ -96,7 +98,7 @@ button div:hover p{
     background-color: white;
     border-radius: 50px;
     border: 3px solid #75673F;
-    
+    background-image: url("../images/bgset/bg02.png");
 }
 
 .example img{

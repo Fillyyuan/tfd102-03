@@ -7,10 +7,11 @@
     min-width: 1200px;
     margin: 0 auto;
     /* border: 1px solid green; */
+    background-image: url("../images/bgset/bg02.png");
 }
 
 .main div.map{
-    margin-top: 100px;
+    padding-top: 100px;
     margin-bottom: 50px;
    
 }
@@ -34,7 +35,7 @@
     height: 5px;
     background-color: #EAFA86;
     border-radius: 360px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 .ann{
@@ -42,6 +43,7 @@
     background-position: center;
     background-repeat: no-repeat;
     /* background-size: 100%;    */
+    padding-top: 50px;
 }
 
 
