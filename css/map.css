@@ -95,7 +95,7 @@
 .sin{
     position: absolute;
     margin: 0;
-    bottom: 0;
+    bottom: 100px;
     right: 50px;
     font-size: 30px;
     font-weight: bold;
