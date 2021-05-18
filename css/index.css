@@ -355,12 +355,12 @@ div.product > p{
 
 .hot:hover p{
     left: 70%;
-    transition: 2s;
+    transition: 1s;
 }
 
 .hot:hover p img{
     left: 70px;    
-    transition: 2s;
+    transition: 1s;
 }
 
 
