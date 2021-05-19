@@ -3,18 +3,34 @@
     font-family: "微軟正黑體";
 }
 
+body{
+    background-image: url("../images/bgset/bg02.png");
+}
+
 /* 頂端列 */
 
 .header, .footer{
     /* border: 1px solid red; */
-    /* width: 1200px; */
+    width: 1200px;
     /* min-width: 1200px; */
-    min-width: 1200px;
     margin: 0 auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    column-gap: 10px;
     background-color: #75673F; 
     position: relative;   
-} 
+}
+
+div.logo{
+    margin: 0;
+    padding: 0;
+    margin-right: 30px;
+    width: 200px;
+    height: 141px; 
+    
+}
+
 .header ul{
     /* border: 1px solid green; */
     list-style: none;
@@ -111,14 +127,7 @@
 .p_center a:hover{
     color: #EAFA86;
 }
-div.logo{
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    height: 141px; 
-    margin-right: 50px;
-    margin-left: 20px;   
-}
+
 div.login{
     /* border: 1px solid green; */
     width: 30px;
@@ -156,6 +165,7 @@ div.login{
     margin: 0;
     padding: 0;
     align-self: flex-end;
+    margin-bottom: 20px;
     fill: #bcd238;
 }
 

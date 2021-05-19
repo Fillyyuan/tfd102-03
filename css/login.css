@@ -3,15 +3,16 @@
 }
 
 .main{
-    /* width: 1200px; */
-    min-width: 1200px;
+    width: 1200px;
+    /* min-width: 1200px; */
     margin: 0 auto;
     /* border: 1px solid green; */
-    background-image: url("../images/bgset/bg02.png");
+    /* background-image: url("../images/bgset/bg02.png"); */
+    padding: 50px;
 }
 
 .sub1 > p, .sub2 > p{
-    font-size: 36px;
+    font-size: 30px;
     font-weight: bold;
     margin: 0;
     padding: 0;
@@ -25,22 +26,23 @@
 
 .sub1, .sub2{
     display: grid;
-    grid-template-rows: 100px 100px 100px 100px 100px;    
+    grid-template-rows: 75px 75px 75px 75px 75px;    
     align-items: center;
-    padding: 50px;      
+    padding: 40px 80px 40px 80px; 
+    /* border: 1px solid red;      */
 }
 
 label{
-    font-size: 24px;
+    font-size: 20px;
 }
 
 input{
-    font-size: 24px;
+    font-size: 20px;
     
 }
 
 .sub-con button{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     border-radius: 50px;
     border: none;
@@ -58,14 +60,14 @@ button:hover{
 .sub1{
     background-image: url("../images/inlogin/1.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 90%;
     background-position: center;
 }
 
 .sub2{
     background-image: url("../images/inlogin/2.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 90%;
     background-position: center    
 }
 

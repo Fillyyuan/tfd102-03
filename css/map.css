@@ -5,11 +5,12 @@
 /* 主要內容 */
 
 .main{
-    /* width: 1200px; */
-    min-width: 1200px;
+    width: 1200px;
+    /* min-width: 1200px; */
     margin: 0 auto;
     /* border: 1px solid green; */
     background-image: url("../images/bgset/bg02.png");
+    padding: 50px;
 }
 
 .main > p{
@@ -33,7 +34,7 @@
 }
 
 .map-container a img{
-    width: 950px;
+    width: 900px;
     display: block;
         
 }
@@ -46,7 +47,7 @@
 }
 
 .map_line div a img{
-    width: 170px;
+    width: 160px;
     display: block;
     border-radius: 30px;
     
@@ -54,7 +55,7 @@
 
 .line img{
     position: absolute;
-    width: 950px;
+    width: 900px;
     top: 0;
     left: 0;
     display: none;    
@@ -72,7 +73,7 @@
     position: absolute;
     margin: 0;
     top: 0;
-    right: 50px;
+    right: 45px;
     font-size: 30px;
     font-weight: bold;
     line-height: 170px;
@@ -83,8 +84,8 @@
 .cou{
     position: absolute;
     margin: 0;
-    top: 170px;
-    right: 50px;
+    top: 160px;
+    right: 45px;
     font-size: 30px;
     font-weight: bold;
     line-height: 170px;
@@ -96,7 +97,7 @@
     position: absolute;
     margin: 0;
     bottom: 100px;
-    right: 50px;
+    right: 45px;
     font-size: 30px;
     font-weight: bold;
     line-height: 170px;

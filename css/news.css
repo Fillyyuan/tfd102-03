@@ -3,12 +3,13 @@
 }
 
 .main{
-    /* width: 1200px; */
-    min-width: 1200px;
+    width: 1200px;
+    /* min-width: 1200px; */
     margin: 0 auto;
     /* border: 1px solid green; */
     text-align: center;
-    background-image: url("../images/bgset/bg02.png");
+    /* background-image: url("../images/bgset/bg02.png"); */
+    padding: 50px;
 }
 
 .main img{

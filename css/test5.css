@@ -1,0 +1,279 @@
+*{
+    box-sizing: border-box;
+    font-family: "微軟正黑體";
+}
+
+body{
+    background-image: url("../images/bgset/bg02.png");
+}
+
+.header{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    column-gap: 20px;
+    justify-content: center;
+    background-color: #75673F;
+    /* padding: 0 50px; */
+}
+
+@media (max-width:991px){
+    .header{
+        justify-content: space-around;
+    }    
+}
+
+.header .logo a img{
+    display: block;
+    width: 150px;
+}
+
+.header ul{
+    display: flex;
+    list-style: none;
+    padding: 0 0 15px 0;
+    column-gap: 20px;
+    margin: 0;
+}
+
+@media (max-width:991px){
+    .header{
+        position: relative;
+    }
+    .header ul{
+        /* display: none; */
+        /* border: 1px solid red; */
+        position: absolute;
+        flex-direction: column;
+        row-gap: 30px;
+        top: 105px;
+        right: 0;
+        background-color: #776b4a;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+    }    
+}
+
+.header ul li a{
+    text-decoration: none;
+    font-size: 24px;
+    color: white;    
+}
+
+.header ul li:nth-child(2){
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+ul.park-area, ul.park-route{
+    display: none;
+    position: absolute;
+    background-color: #75673F;
+    padding: 15px 10px;
+    top: 30px;
+    left: 2px;
+    /* border: 1px solid blue; */
+}
+
+ul.park-route{
+    top: 150px;
+    left: 2px;
+    border-radius: 0 0 20px 20px;
+}
+
+ul.park-area li, ul.park-route li{
+    font-size: 20px;
+    color: white;
+    text-align: center;    
+}
+
+ul.park-area li a, ul.park-route li a{
+    font-size: 18px;    
+}
+
+.header ul li:nth-child(2):hover ul{
+    display: block;
+}
+
+.header ul li a:hover{
+    color: #EAFA86;    
+}
+
+@media (max-width:991px){
+    ul.park-area, ul.park-route{
+        display: none;
+        position: static;
+        grid-template-columns: 3fr 2fr 2fr 2fr;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    ul.park-route{
+        top: 85px;        
+        border-radius: 0 0 20px 20px;
+    }
+    
+    .header ul li:nth-child(2):hover ul{
+        display: grid;
+    }
+    
+    
+}
+
+
+.header .impcon{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 0 0 10px 0;
+    
+}
+
+.header .login{
+    position: relative;
+    /* border: 1px solid red; */
+    bottom: -10px;
+    padding-bottom: 18px;   
+}
+
+.p_center{    
+    background-color: #75673F;
+    width: 100px;
+    padding: 10px;
+    position: absolute;
+    border-radius: 0 0 15px 15px;
+    top: 45px;
+    right: -10px;
+    display: none;
+}
+
+.p_center a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;    
+}
+
+.header .login:hover .p_center{
+    display: block;
+}
+
+.p_center a:hover{
+    color: #EAFA86;
+}
+
+.header .login a svg{
+    width: 30px;
+    fill: white;
+    display: block;
+}
+
+.header .login a svg:hover{
+    fill: #EAFA86;
+}
+
+
+
+
+.header input{
+    display: none;
+}
+
+.header label svg{
+    width: 33px;
+    fill: white;
+}
+
+.header label svg:hover{
+    fill: #EAFA86;
+}
+
+
+.header .hamburger {
+    display: none;
+}
+
+@media (max-width:991px){
+    .header .hamburger {
+        display: block;
+    }
+    .hamburger-box {
+        width: 0;
+        height: 0;
+        display: inline-block;
+        position: relative;
+    }
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+        background-color: white !important;
+    }    
+}
+
+
+
+main{
+    height: 800px;
+}
+
+
+
+
+
+.footer{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: flex-end;    
+    justify-content: space-around;
+    background-color: #75673F;    
+}
+
+.footer pre{
+    align-self: center;
+}
+
+.footer .logo a img{
+    display: block;
+    width: 150px;
+}
+
+.footer pre{
+    margin: 0;
+    padding: 0;    
+    font-size: 14px;
+}
+
+@media (max-width:767px) and (min-width:576px){
+    .footer pre{
+        font-size: 12px;
+    }       
+}
+
+@media (max-width:575px){
+    .footer pre{
+        display: none;
+    }
+    .footer{
+        display: flex;
+    }       
+}
+
+.footer .social svg{
+    width: 30px;
+    fill: #EAFA86;
+}
+
+@media (max-width:767px){
+    .social{
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 5px;
+    }
+    .footer .social svg{
+        width: 25px;
+        
+    }    
+}
+
+
+
