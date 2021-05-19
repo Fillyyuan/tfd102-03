@@ -42,7 +42,7 @@ body{
         position: relative;
     }
     .header ul{
-        /* display: none; */
+        display: none;
         /* border: 1px solid red; */
         position: absolute;
         flex-direction: column;
@@ -172,12 +172,14 @@ ul.park-area li a, ul.park-route li a{
     fill: #EAFA86;
 }
 
-
-
-
 .header input{
-    display: none;
+    display: none;    
 }
+
+.impcon input:checked~.btt{
+    display: block;
+}
+
 
 .header label svg{
     width: 33px;
@@ -274,6 +276,9 @@ main{
         
     }    
 }
+
+
+
 
 
 

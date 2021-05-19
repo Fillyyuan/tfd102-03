@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./css/head foot.css">
     <link rel="stylesheet" href="./css/center.css">
     <link rel="stylesheet" href="./css/shopcar.css">
+    <link rel="stylesheet" href="./css/hamburgers.css">
 </head>
 <body>
     <header class="header">
@@ -14,29 +15,28 @@
             <a href="./index.html"><img src="./images/logo.png" alt="">
             </a>
         </div>
-        <ul>            
+
+        <ul class="nav">            
             <li>
                 <a href="./news.html">最新消息</a>
             </li>
             <li>
-                <div class="park"><a href="./map.html">園區導覽</a>                
-                    <ul>
-                        <div class="park_area"><p>地區</p>
-                            <li><a href="./temperate.html">溫帶地區</a></li>
-                            <li><a href="./temperate.html">熱帶地區</a></li>
-                            <li><a href="./temperate.html">極地地區</a></li>
-                        </div>
-                    </ul>
+                <a href="./map.html">園區導覽</a>                
+                
+                <ul class="park-area">
+                    <li>地區</li>
+                    <li><a href="./temperate.html">溫帶地區</a></li>
+                    <li><a href="./temperate.html">熱帶地區</a></li>
+                    <li><a href="./temperate.html">極地地區</a></li>
+                </ul>
 
-                    <ul>
-                        <div class="park_route"><p>路線</p>
-                            <li><a href="./route.html">親子路線</a></li>
-                            <li><a href="./route.html">情侶路線</a></li>
-                            <li><a href="./route.html">個人路線</a></li>
-                        </div>
-                    </ul>            
-            
-                </div>
+                <ul class="park-route">
+                    <li>路線</li>
+                    <li><a href="./route.html">親子路線</a></li>
+                    <li><a href="./route.html">情侶路線</a></li>
+                    <li><a href="./route.html">個人路線</a></li>
+                </ul>     
+                
             </li>
             <li>
                 <a href="./food.html">特色餐廳</a>
@@ -51,46 +51,57 @@
                 <a href="./information.html">參觀資訊</a>
             </li>            
         </ul>
-        <div class="login">
-            <a href="./login.html"> 
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
-                    <path id="Icon_material-account-circle" data-name="Icon material-account-circle" d="M18,3A15,15,0,1,0,33,18,15.005,15.005,0,0,0,18,3Zm0,4.5A4.5,4.5,0,1,1,13.5,12,4.494,4.494,0,0,1,18,7.5Zm0,21.3a10.8,10.8,0,0,1-9-4.83c.045-2.985,6-4.62,9-4.62s8.955,1.635,9,4.62a10.8,10.8,0,0,1-9,4.83Z" transform="translate(-3 -3)"/>
-                </svg>                      
-            </a>
-            <div class="p_center">
-                <a href="./center.html">會員中心</a>
-            </div>
-        </div>
 
-        <input type="checkbox" id="btnc">
-        <label for="btnc">
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="44.444" viewBox="0 0 50 44.444">
-                <path id="Icon_awesome-shopping-cart" data-name="Icon awesome-shopping-cart" d="M45.844,26.156,49.947,8.1a2.083,2.083,0,0,0-2.032-2.545H13.82l-.8-3.89A2.083,2.083,0,0,0,10.983,0h-8.9A2.083,2.083,0,0,0,0,2.083V3.472A2.083,2.083,0,0,0,2.083,5.556H8.15l6.1,29.812a4.862,4.862,0,1,0,5.82.743h18.2a4.86,4.86,0,1,0,5.521-.9l.479-2.107a2.083,2.083,0,0,0-2.032-2.545h-23.3l-.568-2.778H43.812A2.083,2.083,0,0,0,45.844,26.156Z"/>
-            </svg>
-        </label>
+        <div class="impcon">
         
-        <div class="btt">
-            <p>品項</p>
-            <div class="btt-c">       
-                <img src="./images/inproduct/1.png" alt="">
-                <div class="btt-in">
-                    <p>熊貓餐盤</p>
-                    <p>數量:1</p>
+            <div class="login">
+                <a href="./login.html"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                        <path id="Icon_material-account-circle" data-name="Icon material-account-circle" d="M18,3A15,15,0,1,0,33,18,15.005,15.005,0,0,0,18,3Zm0,4.5A4.5,4.5,0,1,1,13.5,12,4.494,4.494,0,0,1,18,7.5Zm0,21.3a10.8,10.8,0,0,1-9-4.83c.045-2.985,6-4.62,9-4.62s8.955,1.635,9,4.62a10.8,10.8,0,0,1-9,4.83Z" transform="translate(-3 -3)"/>
+                    </svg>                      
+                </a>
+                <div class="p_center">
+                    <a href="./center.html">會員中心</a>
                 </div>
-                <div></div>
             </div>
-            <div class="btt-c">       
-                <img src="./images/infood/d3.png" alt="">
-                <div class="btt-in">
-                    <p>微笑獅子咖啡</p>
-                    <p>數量:1</p>
+
+            <input type="checkbox" id="btnc">
+            <label for="btnc">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="44.444" viewBox="0 0 50 44.444">
+                    <path id="Icon_awesome-shopping-cart" data-name="Icon awesome-shopping-cart" d="M45.844,26.156,49.947,8.1a2.083,2.083,0,0,0-2.032-2.545H13.82l-.8-3.89A2.083,2.083,0,0,0,10.983,0h-8.9A2.083,2.083,0,0,0,0,2.083V3.472A2.083,2.083,0,0,0,2.083,5.556H8.15l6.1,29.812a4.862,4.862,0,1,0,5.82.743h18.2a4.86,4.86,0,1,0,5.521-.9l.479-2.107a2.083,2.083,0,0,0-2.032-2.545h-23.3l-.568-2.778H43.812A2.083,2.083,0,0,0,45.844,26.156Z"/>
+                </svg>
+            </label>
+            
+            <div class="btt">
+                <p>品項</p>
+                <div class="btt-c">       
+                    <img src="./images/inproduct/1.png" alt="">
+                    <div class="btt-in">
+                        <p>熊貓餐盤</p>
+                        <p>數量:1</p>
+                    </div>
+                    <div></div>
                 </div>
-                <div></div>
+                <div class="btt-c">       
+                    <img src="./images/infood/d3.png" alt="">
+                    <div class="btt-in">
+                        <p>微笑獅子咖啡</p>
+                        <p>數量:1</p>
+                    </div>
+                    <div></div>
+                </div>
+                <div class="btt-end">
+                    <button type="button">結帳</button>
+                </div>  
             </div>
-            <div class="btt-end">
-                <button type="button">結帳</button>
-            </div>  
+
+            <button class="hamburger hamburger--3dxy-r" type="button">
+                <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+                </span>
+            </button>
         </div>
+    
         
     </header>
 
@@ -214,10 +225,12 @@
             <a href=""><img src="./images/logo.png" alt=""></a>
         </div>
 
-        <p>本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之用。
-            <br>參考資源:天王寺動物園/よこはま動物園/臺北市立動物園。若有侵權疑慮，您可以私訊
-            <br>[TibaMe-前端設計工程師養成班]後續會由專人協助處理
-            <br>※[TibaMe-前端設計工程師養成班]</p>
+<pre>
+本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，
+本平台僅供學習、展示之用。參考資源:天王寺動物園/
+よこはま動物園/臺北市立動物園。若有侵權疑慮，您可以
+私訊[TibaMe-前端設計工程師養成班]後續會由專人協助處理
+※[TibaMe-前端設計工程師養成班]</pre>
 
         <div class="social">
 
@@ -242,5 +255,33 @@
 
         
     </footer>
+
+    <script src="/vendors/jquery/jquery-3.5.1.min.js"></script>    
+    <script>
+
+        let nav = document.querySelector('.nav')
+        let a = true;
+
+        $(function(){  
+            // hamburger icon 的切換
+            $("button.hamburger").on("click", function(){
+                
+                $(this).toggleClass("is-active");
+
+                if(a){
+                    nav.style.display = "grid";
+                    a = !a
+                    console.log(a)
+                }else{                
+                    nav.style.display = "none";
+                    a = !a
+                    console.log(a)
+                }
+
+            });
+        });
+
+            
+    </script>
 </body>
 </html>

@@ -150,16 +150,28 @@
 <script>
 
     let nav = document.querySelector('.nav')
+    let a = true;
 
-    $(function(){
-  
+    $(function(){  
         // hamburger icon 的切換
         $("button.hamburger").on("click", function(){
-          $(this).toggleClass("is-active");
-          nav.style.display = "grid";
+            
+            $(this).toggleClass("is-active");
+
+            if(a){
+                nav.style.display = "grid";
+                a = !a
+                console.log(a)
+            }else{                
+                nav.style.display = "none";
+                a = !a
+                console.log(a)
+            }
+
         });
-      
     });
+
+        
 </script>
 </body>
 </html>
