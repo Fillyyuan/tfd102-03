@@ -76,11 +76,11 @@ button div:hover p{
 
 
 /* 導覽列 */
-.header ul > li:nth-child(2) > div ul:last-child div li a{
+.header > ul > li:nth-child(2) > a{
     color: #EAFA86;
 }
 
-.header ul > li:nth-child(2) > div > a{
+ul.park-area li a{
     color: #EAFA86;
 }
 
