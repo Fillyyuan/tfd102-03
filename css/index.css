@@ -463,7 +463,7 @@ div.couple .walk{
     bottom: 15%;
     border-radius: 10%;
     width: 250px;
-    z-index: -1;    
+    opacity: 0;    
 }
 
 .reimg .b12{
@@ -476,7 +476,7 @@ div.couple .walk{
     padding: 15px;
     border-radius: 30px;
     color: white; 
-    z-index: -1;  
+    opacity: 0;  
 }
 
 .reimg .b12::first-line{
@@ -487,19 +487,18 @@ div.couple .walk{
 }
 
 .reimg:hover .a12{
-    z-index: 1;    
-    /* transition: 2s;
-    transition-timing-function: linear;     */
+    opacity: 1;    
+    transition: 2s;    
 }
 
 .reimg:hover .b12{
-    z-index: 1;    
-    /* transition: 2s;
-    transition-timing-function: linear;     */
+    opacity: 1;    
+    transition: 2s;    
 }
 
 .reimg:hover .a11{
-    opacity: .4;    
+    opacity: .4;
+    transition: 2s;    
 }
 
 
