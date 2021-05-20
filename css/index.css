@@ -4,14 +4,13 @@
 /* 主要內容 */
 
 .main{
-    width: 1200px;
-    /* min-width: 1200px; */
-    margin: 0 auto;
-    /* border: 1px solid green; */
-    /* background-image: url("../images/bgset/bg02.png"); */
+    max-width: 1200px;    
+    margin: 0 auto;    
     padding: 50px;
+    /* border: 1px solid green; */
 }
 
+/*最新消息*/
 .new{
     /* border: 1px solid blue; */
     padding-top: 100px;
@@ -19,22 +18,44 @@
 }
 
 .new img{
-    width: 1100px;
-    transform: scale(0.8);
+    width: 960px;    
     border-radius: 50px;
     display: block;
     margin: 0 auto;
 }
 
+@media (max-width: 1199px) and (min-width: 768px){
+    .new img{
+        width: 720px;
+    }
+    .main{
+        padding: 0;
+    }
+    .new{
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 767px){
+    .new img{
+        width: 100%;
+    }
+    .main{
+        padding: 0;
+    }
+    .new{
+        margin-bottom: 80px;
+    }
+}
+
+/*關於我們*/
 .about_us{
-    display: flex;
+    display: grid;
+    grid-template-columns: 280px 280px 280px;
     align-items: flex-end;
     justify-content: space-around;
 }
 
-.svg{
-    width: 350px;    
-}
 .svg img{
     display: flex;
     margin: 0 auto;
@@ -72,6 +93,57 @@ div.svg p.content{
     text-align: center;
 }
 
+@media (max-width: 1199px) and (min-width: 768px){
+    .svg:first-of-type img{
+        width: 40%;        
+    }
+    .svg:nth-of-type(2) img{
+        width: 50%;        
+    }
+    .svg:last-of-type img{
+        width: 70%;        
+    }
+    .about_us{
+        justify-content: center;
+        grid-template-columns: 230px 230px 230px;
+        column-gap: 20px;
+    }
+    div.svg p.title{
+        font-size: 24px;
+    }
+    div.svg p.content{
+        font-size: 16px;        
+    }
+}
+
+@media (max-width: 767px){
+    .svg:first-of-type img{
+        width: 40%;        
+    }
+    .svg:nth-of-type(2) img{
+        width: 50%;        
+    }
+    .svg:last-of-type img{
+        width: 70%;        
+    }
+    .about_us{
+        justify-content: space-around;
+        grid-template-columns: 155px 155px 155px;
+    }
+    div.svg p.title{
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    div.svg p.content{
+        font-size: 12px;        
+    }
+}
+
+
+
+
+
+/*口號1*/
 .slogan{
     /* border: 1px solid blue; */
     margin-top: 150px;
@@ -91,6 +163,26 @@ div.svg p.content{
     margin-top: 150px;
 }
 
+@media (max-width: 1199px) and (min-width: 768px){
+    .slogan{
+        width: 80%;
+        height: 160px;
+        font-size: 30px;    
+    }
+  }
+
+@media screen and (max-width: 767px){
+    .slogan{
+        width: 80%;
+        height: 100px;
+        font-size: 24px;
+        margin-top: 80px;    
+    }
+}
+
+
+
+
 
 
 /* 路線 */
@@ -106,7 +198,7 @@ div.route > p{
     margin-top: 160px;
     margin-bottom: 100px;
     font-weight: bold;
-    height: 100px;
+    height: 80px;
     background-image: url("../images/homeroute/fiani.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -116,11 +208,34 @@ div.route > p{
     justify-content: center;
 }
 
+@media (max-width: 1199px) and (min-width: 768px){
+    div.route > p{
+      font-size: 30px;
+      background-position: bottom;
+      background-size: 85%;    
+    }
+}
+
+@media (max-width: 767px){
+    div.route > p{
+      font-size: 24px;
+      background-image: url("../images/homeroute/fiani2.png");
+      background-position: bottom;
+      background-size: 70%;
+      margin-top: 30px;
+      margin-bottom: 30px;    
+    }
+}
+
+
+
+
 .family, .couple, .single{
     display: grid;
-    grid-template-columns: auto 1fr auto;    
+    grid-template-columns: auto  auto; 
+    column-gap: 50px;   
     align-items: center;
-    width: 1000px;
+    /* width: 1000px; */
     margin: 0 auto;
 }
 
@@ -179,6 +294,85 @@ div.couple .walk{
     }
 }
 
+
+@media (max-width: 1199px) and (min-width: 768px){
+    .forwalk p.f-tit{
+        font-size: 24px;       
+    }
+    .forwalk > p{
+        font-size: 16px;        
+        padding-bottom: 60px;    
+    }
+    .family img, .couple img, .single img{
+        width: 250px;
+    }
+
+    .walk img{
+        width: 100px;        
+    }
+    .walk{
+        /* border: 1px solid blue; */
+        position: absolute;
+        right: 20px;
+        bottom: 0;
+        width: 30px;
+        height: 35px;        
+    }
+    @keyframes walking{
+        0%{
+            left: 0px;
+        }
+        100%{
+            left: -110px;
+        }
+    }
+    .family, .couple, .single{        
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 767px){
+    .forwalk p.f-tit{
+        font-size: 20px; 
+    }
+    .forwalk > p{
+        font-size: 12px;        
+        padding-bottom: 60px;    
+    }
+    .family img, .couple img, .single img{
+        width: 200px;
+    }
+    .family, .couple, .single{
+        column-gap: 30px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .walk img{
+        width: 80px;        
+    }
+    .walk{
+        /* border: 1px solid blue; */
+        position: absolute;
+        right: 20px;
+        bottom: 0;
+        width: 25px;
+        height: 30px;        
+    }
+    @keyframes walking{
+        0%{
+            left: 0px;
+        }
+        100%{
+            left: -90px;
+        }
+    }
+}
+
+
+
+
 /* 餐廳 */
 
 .food > p{
@@ -196,6 +390,26 @@ div.couple .walk{
     justify-content: center;
 }
 
+@media (max-width: 1199px) and (min-width: 768px){
+    div.food > p{
+      font-size: 30px;
+      background-position: bottom;
+      background-size: 85%;    
+    }
+}
+
+@media (max-width: 767px){
+    div.food > p{
+      font-size: 24px;
+      background-image: url("../images/homeroute/secani2.png");
+      background-position: bottom;
+      background-size: 70%;
+      margin-top: 0px;
+      margin-bottom: 60px;    
+    }
+}
+
+
 .food > a > img{
     border-radius: 100px;    
     display: block;
@@ -203,6 +417,32 @@ div.couple .walk{
     margin: 0 auto;
     /* border: 1px solid blue; */
 }
+
+
+@media (max-width: 1199px) and (min-width: 768px){
+    .food > a > img{
+        width: 720px;
+        border-radius: 80px;
+    }    
+}
+
+@media (max-width: 767px) and (min-width: 576px){
+    .food > a > img{
+        width: 540px;
+        border-radius: 60px;
+    }    
+}
+
+@media screen and (max-width: 575px){
+    .food > a > img{
+        width: 100%;
+        border-radius: 60px;
+    }
+}
+
+
+
+
 
 .food-img a img{
     /* border: 5px solid blue; */
@@ -289,6 +529,42 @@ input{
     height: 80px;
 }
 
+@media (max-width: 767px){
+    .food-a1 img{
+        display: none;
+    }
+    .meal{
+        width: 330px;
+        height: 150px;                
+    }
+    .food-img a img{        
+        width: 100px; 
+        float: left;
+        margin: 0 5px; 
+        border-radius: 30px;      
+    }
+    .meal label:nth-of-type(1){
+        left:115px;
+    }
+    .meal label:nth-of-type(2){
+        left:145px;
+    }
+    .meal label:nth-of-type(3){
+        left:175px;
+    }
+    .meal label:nth-of-type(4){
+        left:205px;
+    }
+
+    .meal label{
+        width: 8px;
+        height: 8px;        
+    }
+    
+}
+
+
+
 
 /* 商品 */
 div.product > p{
@@ -305,6 +581,29 @@ div.product > p{
     align-items: flex-end;
     justify-content: center;
 }
+
+@media (max-width: 1199px) and (min-width: 768px){
+    div.product > p{
+      font-size: 30px;
+      background-position: bottom;
+      background-size: 85%;    
+    }
+}
+
+@media (max-width: 767px){
+    div.product > p{
+      font-size: 24px;
+      background-image: url("../images/homeroute/fiani2.png");
+      background-position: bottom;
+      background-size: 70%;
+      margin-top: 30px;
+      margin-bottom: 30px;    
+    }
+}
+
+
+
+
 
 .hotgroup{
     display: grid;
@@ -326,8 +625,7 @@ div.product > p{
 .hot a img{
     width: 200px;
     display: block;
-    border-radius: 50px 50px 50px 0;
-      
+    border-radius: 50px 50px 50px 0;      
     /* border: 1px solid red;  */
 }
 
@@ -335,8 +633,7 @@ div.product > p{
     position: absolute;
     width: 80px;
     top: -87px;
-    left: 100px;
-          
+    left: 100px;          
 }
 
 .hot p{
@@ -350,8 +647,7 @@ div.product > p{
     background-color: #A07B14;
     border-radius: 100px;
     width: 172px;
-    z-index: -1;
-       
+    z-index: -1;       
 }
 
 .hot:hover p{
@@ -364,7 +660,118 @@ div.product > p{
     transition: 1s;
 }
 
+@media (max-width: 1199px) and (min-width: 831px){
+    .hot a img{
+        width: 150px;
+        display: block;
+        border-radius: 30px 30px 30px 0;      
+        /* border: 1px solid red;  */
+    }
+    .hot p img{        
+        width: 60px;
+        top: -67px;
+        left: 70px;          
+    }
+    .hot p{
+        padding: 5px 10px 5px 60px; 
+        width: 140px;
+        font-size: 12px;
+    }
+    .hot:hover p img{
+        left: 60px;            
+    }    
+}
 
+@media (max-width: 830px){
+    .hot a img{
+        width: 130px;
+        display: block;
+        border-radius: 30px 30px 30px 0;      
+        /* border: 1px solid red;  */
+        /* opacity: .3; */
+    }
+    .hot p img{        
+        width: 60px;
+        top: 0;
+        left: 20px;          
+    }
+    .hot p{        
+        left: 0;
+        bottom: 0;
+        padding: 5px;
+        border-radius: 0 0 100px 100px;
+        width: 20px;
+        font-size: 12px;
+        z-index: -1;       
+    }
+    .hot:hover p{
+        bottom: -90px;
+        left: 25px;
+        transition: 1s;
+    }    
+    .hot:hover p img{
+        top: 3px;
+        left: 20px;    
+        transition: 1s;
+    }
+
+    .hot:nth-child(6):hover p{
+        bottom: 130px;
+        left: 30px;
+        transition: 1s;
+        border-radius:100px 100px 0 0;
+    }
+
+    .hot:nth-child(8):hover p{
+        bottom: 130px;
+        left: 30px;
+        transition: 1s;
+        border-radius:100px 100px 0 0;
+    }
+}
+
+@media (max-width: 575px){
+    .hot a img{
+        width: 100px;
+        display: block;
+        border-radius: 30px 30px 30px 0;      
+        /* border: 1px solid red;  */
+        /* opacity: .3; */
+    }
+    .hot p img{        
+        width: 50px;
+        top: 0;
+        left: 20px;          
+    }
+    .hot:hover p{
+        bottom: -90px;
+        left: 5px;
+        transition: 1s;
+    }   
+
+    .hot:nth-child(6):hover p{
+        bottom: 100px;
+        left: 20px;
+        transition: 1s;
+        border-radius:100px 100px 0 0;
+    }
+
+    .hot:nth-child(8):hover p{
+        bottom: 100px;
+        left: 20px;
+        transition: 1s;
+        border-radius:100px 100px 0 0;
+    }
+
+    .hot p{        
+        left: 20px;                     
+    }
+  }
+
+
+
+
+/*口號2*/
 .slogan2{
     /* border: 1px solid blue; */
     margin-top: 150px;
@@ -383,11 +790,29 @@ div.product > p{
     margin: 0 auto;
     margin-top: 150px;        
 }
-
 .slogan2 p{
-    color: white;
-    
+    color: white;    
 }
+
+@media (max-width: 1199px) and (min-width: 768px){
+    .slogan2{
+        width: 80%;
+        height: 160px;
+        font-size: 30px;    
+    }
+  }
+
+@media screen and (max-width: 767px){
+    .slogan2{
+        width: 80%;
+        height: 100px;
+        font-size: 20px;
+        margin-top: 80px;    
+    }
+}
+
+
+
 
 /* 動物認養 */
 div.animal_adopt{
@@ -396,11 +821,10 @@ div.animal_adopt{
     margin-top: 160px;
     margin-bottom: 100px;
     height: 900px;
-    text-align: center;
-    /* column-fill: auto; */
-    width: 1100px;
+    text-align: center;    
     margin: 0 auto;
     margin-top: 150px;
+    padding: 50px;
 }
 
 div.animal_adopt div{
@@ -409,10 +833,40 @@ div.animal_adopt div{
 
 div.animal_adopt div img{
     width: 100%;
-    border-radius: 30px;    
+    border-radius: 30px; 
+    display: block;   
 }
 
+@media (max-width: 575px){
+    div.animal_adopt{
+        height: 430px;
+        margin-top: 50px;
+        padding: 20px;
+    }
+    div.animal_adopt div img{        
+        border-radius: 15px;            
+    }
+}
 
-
+@media (max-width: 767px) and (min-width: 576px){
+    div.animal_adopt{
+        height: 600px;
+        margin-top: 50px;
+        padding: 20px;
+    }
+    div.animal_adopt div img{        
+        border-radius: 15px;            
+    }
+}
+@media (max-width: 991px) and (min-width: 768px){
+    div.animal_adopt{
+        height: 750px;
+        margin-top: 50px;
+        padding: 30px;
+    }
+    div.animal_adopt div img{        
+        border-radius: 15px;            
+    }
+}
 
 
