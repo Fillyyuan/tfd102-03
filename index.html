@@ -383,17 +383,18 @@
         
     </footer>
 
-    <script src="/vendors/jquery/jquery-3.5.1.min.js"></script>    
+    <script src="./vendors/jquery/jquery-3.5.1.min.js"></script>    
     <script>
 
-        let nav = document.querySelector('.nav')
+        let nav = document.querySelector('.nav');
         let a = true;
-
+                
         $(function(){  
             // hamburger icon 的切換
             $("button.hamburger").on("click", function(){
                 
                 $(this).toggleClass("is-active");
+                console.log(this);
 
                 if(a){
                     nav.style.display = "grid";
@@ -407,8 +408,7 @@
 
             });
         });
-
-            
+           
     </script>
 
 </body>
