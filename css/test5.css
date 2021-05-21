@@ -277,6 +277,10 @@ main{
     }    
 }
 
+ul.nav{
+    display: grid;
+}
+
 
 
 

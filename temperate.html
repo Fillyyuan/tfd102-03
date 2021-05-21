@@ -16,7 +16,7 @@
             </a>
         </div>
 
-        <ul class="nav">            
+        <ul id="ul22">            
             <li>
                 <a href="./news.html">最新消息</a>
             </li>
@@ -302,24 +302,16 @@
     <script src="./vendors/jquery/jquery-3.5.1.min.js"></script>    
     <script>
 
-        let nav = document.querySelector('.nav')
-        let a = true;
-
+        let ul22 = document.getElementById("ul22");
+        // let a = true;
+        
         $(function(){  
             // hamburger icon 的切換
             $("button.hamburger").on("click", function(){
                 
                 $(this).toggleClass("is-active");
 
-                if(a){
-                    nav.style.display = "grid";
-                    a = !a
-                    console.log(a)
-                }else{                
-                    nav.style.display = "none";
-                    a = !a
-                    console.log(a)
-                }
+                ul22.classList.toggle("nav");
 
             });
         });

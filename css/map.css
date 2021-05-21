@@ -153,6 +153,6 @@
     display: block;
 }
 
-.header ul > li:nth-child(2) > div > a{
+.header > ul > li:nth-child(2) > a{
     color: #EAFA86;
 }

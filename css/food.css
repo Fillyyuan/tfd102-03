@@ -186,7 +186,7 @@
     display: block;
 }
 
-.header ul > li:nth-child(3) a{
+.header > ul > li:nth-child(3) a{
     color: #EAFA86;
 }
 

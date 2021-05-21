@@ -16,7 +16,7 @@
             </a>
         </div>
 
-        <ul class="nav">            
+        <ul id="ul22">            
             <li>
                 <a href="./news.html">最新消息</a>
             </li>
@@ -29,14 +29,12 @@
                     <li><a href="./temperate.html">熱帶地區</a></li>
                     <li><a href="./temperate.html">極地地區</a></li>
                 </ul>
-
                 <ul class="park-route">
                     <li>路線</li>
                     <li><a href="./route.html">親子路線</a></li>
                     <li><a href="./route.html">情侶路線</a></li>
                     <li><a href="./route.html">個人路線</a></li>
-                </ul>     
-                
+                </ul>
             </li>
             <li>
                 <a href="./food.html">特色餐廳</a>
@@ -51,7 +49,6 @@
                 <a href="./information.html">參觀資訊</a>
             </li>            
         </ul>
-
         <div class="impcon">
         
             <div class="login">
@@ -100,9 +97,7 @@
                 <span class="hamburger-inner"></span>
                 </span>
             </button>
-        </div>
-    
-        
+        </div> 
     </header>
 
     <main class="main">
@@ -149,10 +144,9 @@
 <script src="/vendors/jquery/jquery-3.5.1.min.js"></script>    
 <script>
 
-    let nav = document.querySelector('.nav');
-    let a = true;
-    // let e = document.querySelector('hamburger hamburger--3dxy-r');
+    let ul22 = document.getElementById("ul22");      
 
+    console.log(ul22);
 
     $(function(){  
         // hamburger icon 的切換
@@ -160,15 +154,7 @@
 
             $(this).toggleClass("is-active");
 
-            if(a){
-                nav.style.display = "grid";
-                a = !a;
-                console.log(a);
-            }else{                
-                nav.style.display = "none";
-                a = !a;
-                console.log(a);
-            }
+            ul22.classList.toggle("nav");
 
         });
     });
