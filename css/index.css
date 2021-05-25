@@ -888,7 +888,7 @@ input{
     }    
 }
 
-@media (max-width: 830px){
+@media (max-width: 830px) {
     .hot a img{
         width: 130px;
         display: block;
