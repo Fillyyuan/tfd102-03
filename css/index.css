@@ -36,7 +36,7 @@
     }
 }
 
-@media (max-width: 767px){
+@media (max-width: 767.9px){
     .new img{
         max-width: 100%;
     }
@@ -116,7 +116,7 @@ div.svg p.content{
     }
 }
 
-@media (max-width: 767px){
+@media (max-width: 767.9px){
     .svg:first-of-type img{
         width: 40%;        
     }
@@ -172,7 +172,7 @@ div.svg p.content{
     }
   }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767.9px){
     .slogan{
         width: 80%;
         height: 100px;
@@ -228,7 +228,7 @@ div.svg p.content{
     }
 }
 
-@media (max-width: 767px){
+@media (max-width: 767.9px){
     .route-title > p{
         font-size: 24px;
     }
@@ -349,7 +349,7 @@ div.couple .walk{
     }
 }
 
-@media (max-width: 767px){
+@media (max-width: 767.9px){
     .forwalk p.f-tit{
         font-size: 20px; 
     }
@@ -426,7 +426,7 @@ div.couple .walk{
     }
 }
 
-@media (max-width: 767px){
+@media (max-width: 767.9px){
     .food-title > p{
         font-size: 24px;
     }
@@ -528,7 +528,7 @@ div.couple .walk{
     
 }
 
-@media (max-width: 767px) and (min-width: 576px){
+@media (max-width: 767.9px) and (min-width: 576px){
     .food .reimg{        
         width: 540px;        
     }
@@ -703,7 +703,7 @@ input{
     transition: 2s;
 }
 
-@media (max-width: 767px){
+@media (max-width: 767.9px){
     
     .food-img{
         grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px;
@@ -791,7 +791,7 @@ input{
     }
 }
 
-@media (max-width: 767px){
+@media (max-width: 767.9px){
     .product-title > p{
         font-size: 24px;
     }
@@ -1008,7 +1008,7 @@ input{
     }
   }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767.9px){
     .slogan2{
         width: 80%;
         height: 100px;
@@ -1023,15 +1023,14 @@ input{
 /* 動物認養 */
 div.animal_adopt{
     column-count: 3;
-    column-gap: 20px;
-    margin-top: 160px;
-    margin-bottom: 100px;
+    column-gap: 20px;    
     height: 900px;
     text-align: center;    
     margin: 0 auto;
     margin-top: 150px;
     padding: 50px;
     column-fill: balance;
+    
 }
 
 div.animal_adopt div{
@@ -1044,11 +1043,12 @@ div.animal_adopt div img{
     display: block;   
 }
 
-@media (max-width: 575px){
+@media (max-width: 575.9px){
     div.animal_adopt{
         height: 430px;
         margin-top: 50px;
-        padding: 20px;
+        padding: 10px;
+        width: 95%;
     }
     div.animal_adopt div img{        
         border-radius: 15px;            

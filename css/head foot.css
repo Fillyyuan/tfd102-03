@@ -5,7 +5,7 @@
 
 body{
     background-image: url("../images/bgset/bg02.png");
-    /* margin: 0; 560px~575px 有問題 */
+     margin: 0; 
 }
 
 .header{
@@ -244,7 +244,7 @@ ul.park-area li a, ul.park-route li a{
     }       
 }
 
-@media (max-width:575px){
+@media (max-width:575.9px){
     .footer{
         display: block;
         text-align: center;
@@ -260,7 +260,7 @@ ul.park-area li a, ul.park-route li a{
     fill: #EAFA86;
 }
 
-@media (max-width:767px){
+@media (max-width:767px) and (min-width:576px){
     .social{
         display: grid;
         grid-template-columns: auto auto;
@@ -271,7 +271,7 @@ ul.park-area li a, ul.park-route li a{
     }    
 }
 
-@media (max-width:575px){
+@media (max-width:575.9px){
     .social{
         display: grid;
         grid-template-columns: auto auto auto auto;
