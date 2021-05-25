@@ -5,6 +5,7 @@
 
 body{
     background-image: url("../images/bgset/bg02.png");
+    /* margin: 0; 560px~575px 有問題 */
 }
 
 .header{
@@ -244,11 +245,13 @@ ul.park-area li a, ul.park-route li a{
 }
 
 @media (max-width:575px){
-    .footer pre{
-        display: none;
-    }
     .footer{
-        display: flex;
+        display: block;
+        text-align: center;
+    }
+    .footer .logo a img{
+        margin: 0 auto;
+        padding: 0;
     }       
 }
 
@@ -264,9 +267,21 @@ ul.park-area li a, ul.park-route li a{
         column-gap: 5px;
     }
     .footer .social svg{
-        width: 25px;
-        
+        width: 25px;        
     }    
+}
+
+@media (max-width:575px){
+    .social{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        column-gap: 0px;
+        justify-items: center;
+    }
+    .footer .social svg{
+        width: 25%;  
+        margin-top: 5px;      
+    }        
 }
 
 ul.nav{
