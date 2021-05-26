@@ -212,9 +212,9 @@ ul.park-area li a, ul.park-route li a{
 
 
 
-main{
+/* main{
     height: 800px;
-}
+} */
 
 
 
@@ -286,3 +286,225 @@ ul.nav{
 
 
 
+/* 路線 */
+.route{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.route-title{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    column-gap: 20px;
+    margin-top: 100px;
+    border-bottom: 5px solid black;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.route-title .d12{
+    /* transform: rotate(30deg); */
+    width: 80px;
+}
+
+.route-title > p{
+    font-size: 36px; 
+    font-weight: bold;    
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 991px) and (min-width: 768px){
+    .route-title > p{
+        font-size: 30px;
+    }
+    .route-title .d12{
+        width: 40px;
+    }
+    .route-title .d11{
+        width: 60px;
+    }    
+}
+
+@media (max-width: 767.9px){
+    .route-title > p{
+        font-size: 24px;
+    }
+    .route-title .d12{
+        width: 30px;        
+    }
+    .route-title .d11{
+        width: 45px;
+    }
+    .route-title{
+        column-gap: 10px;
+        margin-top: 50px;
+    }
+}
+
+
+
+
+.family, .couple, .single{
+    display: grid;
+    grid-template-columns: auto  auto; 
+    column-gap: 50px;   
+    align-items: center;
+    /* width: 1000px; */
+    margin: 0 auto;
+}
+
+.family img, .couple img, .single img{
+    width: 300px;
+}
+
+.forwalk > p{
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 60px;    
+}
+
+.forwalk p.f-tit{
+    font-size: 30px;
+    padding: 0;
+    border-bottom: 5px solid #eafa86;   
+}
+
+.forwalk{
+    position: relative;
+    /* border: 1px solid red; */    
+}
+
+.walk{
+    /* border: 1px solid blue; */
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    width: 50px;
+    height: 45px; 
+    overflow: hidden;   
+}
+
+div.couple .walk{
+    left: 0;
+    bottom: -10px;
+}
+
+.walk img{
+    width: 150px;
+    position: absolute;
+    animation-name: walking;
+    animation-duration: 0.8s;
+    animation-timing-function: steps(3, end);
+    animation-iteration-count: infinite;
+    /* border: 1px solid green; */
+}
+
+@keyframes walking{
+    0%{
+        left: 0px;
+    }
+    100%{
+        left: -160px;
+    }
+}
+
+
+@media (max-width: 1199px) and (min-width: 768px){
+    .forwalk p.f-tit{
+        font-size: 24px;       
+    }
+    .forwalk > p{
+        font-size: 16px;        
+        padding-bottom: 60px;    
+    }
+    .family img, .couple img, .single img{
+        width: 250px;
+    }
+
+    .walk img{
+        width: 100px;        
+    }
+    .walk{
+        /* border: 1px solid blue; */
+        position: absolute;
+        right: 20px;
+        bottom: 0;
+        width: 30px;
+        height: 35px;        
+    }
+    @keyframes walking{
+        0%{
+            left: 0px;
+        }
+        100%{
+            left: -110px;
+        }
+    }
+    .family, .couple, .single{        
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 767.9px){
+    .forwalk p.f-tit{
+        font-size: 20px; 
+    }
+    .forwalk > p{
+        font-size: 12px;        
+        padding-bottom: 60px;    
+    }
+    .family img, .couple img, .single img{
+        width: 200px;
+    }
+    .family, .couple, .single{
+        column-gap: 30px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .walk img{
+        width: 80px;        
+    }
+    .walk{
+        /* border: 1px solid blue; */
+        position: absolute;
+        right: 20px;
+        bottom: 0;
+        width: 25px;
+        height: 30px;        
+    }
+    @keyframes walking{
+        0%{
+            left: 0px;
+        }
+        100%{
+            left: -90px;
+        }
+    }
+
+    .family, .couple, .single{
+        position: relative;
+        transform: translateY(0) !important;
+        opacity: 1 !important;
+    }
+}
+
+
+.family, .couple, .single{
+    position: relative;
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.family-on, .couple-on, .single-on{
+    transform: translateY(0);
+    opacity: 1;
+    transition: 2s;
+}

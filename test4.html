@@ -101,7 +101,84 @@
     </header>
 
     <main class="main">
+        <div class="route">
 
+            <div class="route-title">
+
+                <img class="d11" src="./images/fortest/rf1.png" alt="">
+                <p>遊園路線</p>
+                <img class="d12" src="./images/fortest/rf2.png" alt="">
+    
+            </div>
+
+            <div class="family" id="familyid">
+                <img src="./images/homeroute/family.png" alt="">
+                
+                <!-- <div></div> -->
+                
+                <div class="forwalk">
+                    <p class="f-tit">遊園路線-親子</p>
+                    <br>
+                    <P>
+                    入口->溫帶動物區->特色餐廳->極地動物區->紀念品商店->快樂返家
+                    <br>
+                    <br>在這寒冷的天氣，一家人一定要好好抱一個取個暖，感受一下親情的可貴
+                    </p>
+                    
+                    <a href="./route.html">
+                        <div class="walk">
+                            <img src="./images/walking.png" alt="">
+                        </div>
+                    </a> 
+                </div>                 
+            </div>
+            
+            <div class="couple" id="coupleid">
+                
+                <div class="forwalk">
+                    <p class="f-tit">遊園路線-情侶</p>                
+                    <br>
+                    <p>
+                    入口->非洲動物區->特色餐廳->鳥園->紀念品商店->快樂返家
+                    <br>
+                    <br>雄赳赳氣昂昂的獅子王與他的王后相依著，還不快來看看我們嗎
+                    </p>
+                    <a href="./route.html">
+                        <div class="walk">
+                            <img src="./images/walking.png" alt="">
+                        </div>
+                    </a>
+                </div> 
+                
+                <!-- <div></div> -->
+                <img src="./images/homeroute/couple.png" alt="">
+    
+            </div>
+    
+            <div class="single" id="singleid">
+                <img src="./images/homeroute/single.png" alt="">
+                
+                <!-- <div></div> -->
+                
+                <div class="forwalk">
+                    
+                    <p class="f-tit">遊園路線-個人</p>
+                    <br>
+                    <p>
+                        入口->鳥園->特色餐廳->溫帶動物區->極地動物區->紀念品商店
+                    <br>->快樂返家
+                    <br>
+                    <br>我有著孤獨的靈魂，乘風翱翔著，快跟上我的步伐吧!!
+                    </p>
+                    <a href="./route.html">
+                        <div class="walk">
+                            <img src="./images/walking.png" alt="">
+                        </div> 
+                    </a>   
+                </div>              
+            </div>
+    
+        </div>
     </main>
 
     <footer class="footer">
@@ -161,5 +238,38 @@
 
         
 </script>
+
+<script>
+    var ff, cc, ss;
+
+    ff = document.getElementById("familyid")
+
+    cc = document.getElementById("coupleid")
+
+    ss = document.getElementById("singleid")
+
+    // console.log(cc);     
+    
+
+    document.addEventListener('scroll',() => {
+
+        console.log(scrollY)
+        
+        if(scrollY > 50){ 
+            ff.classList.add('family-on');
+        }
+        if(scrollY > 350){    
+            cc.classList.add('couple-on');
+        }
+        if(scrollY > 650){      
+            ss.classList.add('single-on');
+        }        
+    });
+
+
+</script>
+
+
+
 </body>
 </html>
