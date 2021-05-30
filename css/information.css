@@ -3,7 +3,7 @@
 }
 
 .main{
-    width: 1200px;
+    max-width: 1200px;
     /* min-width: 1200px; */
     margin: 0 auto;
     /* border: 1px solid green; */
@@ -38,8 +38,12 @@
     font-weight: bold;
 }
 
+
+
+
+
 .tran{
-    width: 50%
+    width: 50%;
 }
 
 .tran p{
@@ -61,5 +65,17 @@
 
 .header ul li:nth-child(6) a{
     color: #EAFA86;
+}
+
+@media (max-width: 767px){
+    .tran{
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+    iframe{
+        width: 100%;
+        height: 300px;
+    }
 }
 

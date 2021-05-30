@@ -4,11 +4,8 @@
 
 /* 主要內容 */
 .main{
-    width: 1200px;
-    /* min-width: 1200px; */
+    max-width: 1200px;    
     margin: 0 auto;
-    /* border: 1px solid green; */
-    /* background-image: url("../images/bgset/bg02.png"); */
     padding: 50px;
 }
 
@@ -23,21 +20,57 @@
     border-radius: 50px;
 }
 
+@media (max-width: 1199px) and (min-width: 768px){
+    .map img{
+        width: 720px;        
+        margin-top: 50px;
+    } 
+    .main{
+        padding: 0;
+    }
+    .main div.map{
+        padding-top: 50px;        
+    } 
+}
+
+@media (max-width: 767.9px){
+    .map > img{
+        max-width: 100%;        
+        margin-top: 50px;
+    }
+    .main{
+        padding: 0;
+    }
+    .main div.map{
+        padding-top: 50px;          
+    }
+}
+
+
+
+
+
+
+
 /* 動物圖像 */
 .animal-ann .line{
     border: 1px solid #EAFA86;
     height: 5px;
     background-color: #EAFA86;
     border-radius: 360px;
-    width: 1000px;
+    /* width: 1000px; */
     margin: 0 auto;
 }
+
+
+
+
+
 
 .photo{
     display: flex;
     flex-direction: column;
-    align-items: center;
-     
+    align-items: center;     
 }
 
 .animal-ann button{
@@ -49,9 +82,20 @@
     margin-bottom: 20px;
     border: 0;
     background: none;
-    width: 780px;
+    /* width: 780px; */
     position: relative;
 }
+
+@media (max-width: 820px){
+    .animal-ann button{        
+        grid-template-columns: 150px 150px;
+        row-gap: 50px;
+    }
+}
+
+
+
+
 
 .animal-ann button img{
     width: 150px;
@@ -93,9 +137,11 @@ ul.park-route li a{
     margin-top: 0;
     display: none;
     position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 28%;
+    top: 30%;
+    /* transform: translateY(-50%); */
+    left: 50%;
+    transform: translateX(-50%);
+
     background-color: white;
     border-radius: 50px;
     border: 3px solid #75673F;
@@ -128,10 +174,37 @@ ul.park-route li a{
     border-radius: 360px;
 }
 
+@media (max-width: 600px){
+    .example img{        
+        margin-right: 0px;
+    }
+    .example{
+        flex-direction: column;
+        top: 10%;
+        padding: 10px 20px 20px 20px;
+        
+    }
+}
+
+
+
+
+
+
+
+
 .animal-ann p{
     font-size: 24px;
     font-weight: bold;
     margin: 0;
     padding: 0;
     margin-left: 100px;
+    margin-top: 50px;
 }
+
+@media (max-width: 820px){
+    .animal-ann p{        
+        margin-left: 50px;        
+    }
+}
+

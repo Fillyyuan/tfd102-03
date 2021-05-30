@@ -3,8 +3,7 @@
 }
 
 .main{
-    width: 1200px;
-    /* min-width: 1200px; */
+    max-width: 1200px;
     margin: 0 auto;
     /* border: 1px solid green; */
     /* background-image: url("../images/bgset/bg02.png"); */
@@ -13,8 +12,7 @@
 
 .main div.map{
     padding-top: 100px;
-    margin-bottom: 50px;
-   
+    margin-bottom: 50px;   
 }
 
 .map img{
@@ -23,6 +21,35 @@
     margin: 0 auto;
     border-radius: 50px;
 }
+
+@media (max-width: 1199px) and (min-width: 768px){
+    .map img{
+        width: 720px;        
+        margin-top: 50px;
+    } 
+    .main{
+        padding: 0;
+    }
+    .main div.map{
+        padding-top: 50px;        
+    } 
+}
+
+@media (max-width: 767.9px){
+    .map > img{
+        max-width: 100%;        
+        margin-top: 50px;
+    }
+    .main{
+        padding: 0;
+    }
+    .main div.map{
+        padding-top: 50px;          
+    }
+}
+
+
+
 
 .main > p{
     font-size: 24px;
@@ -39,19 +66,23 @@
     /* margin-bottom: 50px; */
 }
 
+
+@media (max-width: 767.9px){
+    .main > p{
+        font-size: 24px;
+        margin-left: 50px;
+    }
+}
+
 .ann{
     background-image: url("../images/inmaptem/Group\ 201.png");
     background-position: center;
     background-repeat: no-repeat;
-    /* background-size: 100%;    */
     padding-top: 50px;
-}
-
-
-.ann{
     display: grid;
     grid-template-columns: auto; 
-    gap: 40px;      
+    gap: 40px;
+    padding-bottom: 100px;
 }
 
 .ann :nth-child(2n){
@@ -62,19 +93,17 @@
     justify-content: flex-end;
 }
 
-
-
 .example{
     display: flex;
     font-size: 16px;
-    align-items: flex-start;
-    
+    align-items: center;    
 }
 
-.example pre{
+.example p{
     margin: 0;
     padding: 0;
     font-weight: bold;
+    width: 300px;
 }
 
 .example img{
@@ -82,6 +111,42 @@
     height: 200px;
     margin-right: 50px;
 }
+
+
+
+@media (max-width: 767px) and (min-width: 576px){
+    .example img{        
+        margin-right: 20px;
+    }
+    .ann{
+        padding-bottom: 100px;
+    }
+}
+
+@media (max-width: 575.9px){
+    .ann{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 50px;
+    }
+    .example img{        
+        margin-right: 20px;
+    }
+    .example p{        
+        width: 250px;
+    }
+    .ann :nth-child(2n){
+        justify-content: flex-start;
+    }
+    
+    .ann :nth-child(3), .ann :nth-child(7){
+        justify-content: flex-start;
+    }
+}
+
+
+
+
 
 .header > ul > li:nth-child(2) > a{
     color: #EAFA86;

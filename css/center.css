@@ -3,7 +3,7 @@
 }
 
 .main{
-    width: 1200px;
+    max-width: 1200px;
     /* min-width: 1200px; */
     margin: 0 auto;
     /* border: 1px solid green; */
@@ -17,7 +17,7 @@
     font-weight: bold;
     border-bottom: 10px solid #EAFA86;
     padding-top: 100px;
-    width: 1060px;
+    max-width: 1060px;
 }
 
 .food, .product{
@@ -28,7 +28,7 @@
     font-size: 24px;
     font-weight: bold;
     border-bottom: 10px solid #EAFA86;
-    width: 1000px;
+    max-width: 1000px;
 }
 
 .food-con, .product-con{
@@ -66,10 +66,35 @@
 }
 
 .adopt-con{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     justify-content: space-evenly;
     padding-bottom: 100px;
     margin-top: 64px;
+}
+
+@media (max-width: 1199px) and (min-width: 850px){
+    .adopt-con{
+        grid-template-columns: auto auto auto;
+        row-gap: 50px;        
+    }
+}
+
+@media (max-width: 849.9px) and (min-width: 600px){
+    .adopt-con{
+        grid-template-columns: auto auto;
+        row-gap: 50px;        
+    }
+}
+
+@media (max-width: 599.9px){
+    .adopt-con{
+        grid-template-columns: auto;
+        row-gap: 50px;        
+    }
+    .main > p{
+        font-size: 30px;        
+    }
 }
 
 .adopt{

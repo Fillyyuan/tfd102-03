@@ -3,7 +3,7 @@
 }
 
 .main{
-    width: 1200px;
+    max-width: 1200px;
     /* min-width: 1200px; */
     margin: 0 auto;
     /* border: 1px solid green; */
@@ -20,8 +20,17 @@
 }
 
 .sub-con{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     justify-content: space-evenly;
+}
+
+@media (max-width: 985px){
+    .sub-con{
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 50px;
+    }
 }
 
 .sub1, .sub2{

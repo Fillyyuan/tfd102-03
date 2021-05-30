@@ -3,7 +3,7 @@
 }
 
 .main{
-    width: 1200px;
+    max-width: 1200px;
     /* min-width: 1200px; */
     margin: 0 auto;
     /* border: 1px solid green; */
@@ -57,6 +57,39 @@
     gap: 50px;
     padding-bottom: 100px;    
 }
+
+@media (max-width: 1199px) and (min-width: 992px){
+    .product{
+        grid-template-columns: 230px 230px 230px;
+    }
+    .main > p{
+        font-size: 30px;         
+    }
+}
+
+  @media (max-width: 991.9px) and (min-width: 768px){
+    .product{
+        grid-template-columns: 230px 230px;
+    }
+    .main > p{
+        font-size: 30px;         
+    }
+}
+
+@media (max-width: 767.9px){
+    .product{
+        grid-template-columns: 230px;
+    }
+    .main > p{
+        font-size: 30px;         
+    }
+}
+
+
+
+
+
+
 
 .header > ul > li:nth-child(4) a{
     color: #EAFA86;

@@ -3,7 +3,7 @@
 }
 
 .main{
-    width: 1200px;
+    max-width: 1200px;
     /* min-width: 1200px; */
     margin: 0 auto;
     /* border: 1px solid green; */
@@ -20,6 +20,17 @@
     margin-bottom: 36px; 
 }
 
+@media (max-width: 600px){
+    .main > p{
+        font-size: 30px;         
+    }   
+}
+
+
+
+
+
+
 .food1{
     display: grid;
     grid-template-columns: auto 650px 1fr;
@@ -27,7 +38,6 @@
     gap: 20px;
     /* border: 1px solid red; */
     position: relative;
-
 }
 
 .food2{
@@ -37,6 +47,35 @@
     gap: 20px;
     position: relative;
 }
+
+@media (max-width: 1000px){   
+    .food1 div:nth-child(1) img{
+        display: none;
+    }
+    .food2 div:nth-child(3) img:nth-child(2){
+        display: none;
+    }    
+}
+
+@media (max-width: 767.9px) and (min-width: 576px){
+    
+    .food1{
+        grid-template-columns: auto 500px 1fr;
+    }
+    .food2{
+        grid-template-columns: 1fr 500px auto;
+    }
+}
+
+@media (max-width: 575.9px){
+    .food1{
+        grid-template-columns: auto 400px 1fr;
+    }
+    .food2{
+        grid-template-columns: 1fr 400px auto;
+    }
+}
+
 
 .tex{    
     align-self: flex-end;
@@ -65,6 +104,16 @@
     animation-fill-mode:forwards;
 }
 
+@media (max-width: 1000px){
+    .f1-ani{
+        animation: initial;
+    }
+    .food1 .tex p{        
+        left: 0px;    
+    }
+}
+
+
 @keyframes left {
     0%{
         left: -450px;
@@ -89,6 +138,15 @@
     animation-fill-mode:forwards;
 }
 
+@media (max-width: 1000px){
+    .f2-ani{
+        animation: initial;
+    }
+    .food2 .tex p{        
+        left: 0px;    
+    }
+}
+
 @keyframes right {
     0%{
         right: -450px;
@@ -108,10 +166,58 @@
     left: 120px;
 }
 
+
 .food2 img:first-child{
     position: absolute;
     right: 120px;
 }
+
+@media (max-width: 1000px) and (min-width: 768px){    
+    .food1 .tex img{   
+        left: 25px;
+    }
+    .food2 img:first-child{       
+        right: -20px;
+    }   
+    
+}
+
+@media (max-width: 767.9px){    
+    
+    .food1 .tex img{   
+        top: -30px;
+        left: 260px;
+        width: 150px;
+    }
+
+    .food2 img:first-child{       
+        left: 30px;
+        top: -30px;
+        width: 150px;
+    }
+    
+    .food1, .food2{
+        margin-bottom: 50px;
+    }
+    
+    .food2 img:first-child{       
+        right: -20px;
+    }
+    .food1 .tex p, .food2 .tex p{
+        padding: 30px;   
+        max-width: 400px;  
+    }    
+    
+    .main{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+
+
+
 
 .food2 .tex p > img{
     position: relative;
@@ -145,6 +251,36 @@
 }
 
 
+@media (max-width: 767.9px){
+    .food1 .tex p a img{
+        left: 100px;
+        top: -10px;
+    }
+    .food2 .tex p a img{    
+        left: -100px;
+        top: -10px;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .drink-group1{
     display: grid;
     grid-template-columns: auto 3fr auto 4fr 1fr;
@@ -158,6 +294,21 @@
     column-gap: 30px;
     padding-bottom: 100px;
 }
+
+@media (max-width: 1199px){
+    .drink-group1{
+        grid-template-columns: auto auto; 
+        row-gap: 50px;       
+    }
+    .drink-group2 div:nth-child(1){
+       display: none;        
+    }
+    .drink-group2{
+        grid-template-columns: auto auto;   
+        row-gap: 50px;     
+    }    
+}
+
 
 .dr-tex{
     align-self: flex-end;
@@ -184,6 +335,12 @@
 
 .drink-group1 div img, .drink-group2 div img{
     display: block;
+}
+
+@media (max-width: 600px){
+    .drink-group1 > div > img, .drink-group2 > div > img{
+        width: 180px;
+    }    
 }
 
 .header > ul > li:nth-child(3) a{
