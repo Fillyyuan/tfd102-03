@@ -4,130 +4,102 @@
 
 /* 主要內容 */
 .main{
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     border: 1px solid green;
+    padding: 50px;   
 }
 
-.main div.map{
-    margin-top: 100px;   
+.tit_map{
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 10px 0;    
+    border-bottom: 5px solid #EAFA86;
+    /* display: inline; */
 }
 
-.map img{
-    display: block;
-    width: 1000px;
-    margin: 0 auto;
-    border-radius: 50px;
+.tit_map > span{
+    font-size: 20px;
 }
 
-/* 動物圖像 */
-.animal-ann .line{
-    border: 1px solid #EAFA86;
-    height: 5px;
-    background-color: #EAFA86;
-    border-radius: 360px;
-    width: 1000px;
-    margin: 0 auto;
+.tit_map > span > button{
+    border: 0;        
 }
 
-.photo{
+.tit_map > span > button > img{
+    width: 30px;
+}
+
+.tit_map > span > button > img:hover{
+    transform: scale(1.3);
+}
+
+
+.container{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-     
+    /* justify-content: space-between; */
+    column-gap: 30px;
 }
 
-.animal-ann button{
-    display: grid;
-    grid-template-columns: 150px 150px 150px 150px;
-    justify-content: center;
-    column-gap: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 0;
-    background: none;
-    width: 780px;
+.all_map{
     position: relative;
 }
 
-.animal-ann button img{
-    width: 150px;
-}
-
-.animal-ann button p{
+#fam_map, #cou_map, #sin_map{
     position: absolute;
     top: 0;
-    margin: 0;
-    width: 150px;
-    height: 150px;
-    line-height: 150px;
-    background-color: white;
-    opacity: .7;   
-    display: none;    
+    left: 0;
+    display: none;
 }
 
-button div:hover p{
+.all_map img{    
+    width: 900px;    
+}
+
+.all_btn{
+    display: flex;
+    flex-direction: column;
+}
+
+.all_btn > button{
+    width: 160px;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;    
+}
+
+.all_btn > button > img{
+    width: 100%;
+}
+
+.all_btn > button > p{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.all_btn > button:hover img{
+    opacity: .4;
+}
+
+.all_btn > button:hover p{
     display: block;
 }
 
-
-/* 導覽列 */
-.header ul > li:nth-child(2) > div ul:last-child div li a{
-    color: #EAFA86;
+.-on{
+    display: block !important;
 }
 
-.header ul > li:nth-child(2) > div > a{
-    color: #EAFA86;
-}
-
-
-/* 註解欄位 */
-.example{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0;
-    display: none;
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 28%;
-    background-color: white;
-    border-radius: 50px;
-    border: 3px solid #75673F;
-    
-}
-
-.example img{
-    width: 200px;
-    height: 200px;
-    margin-right: 50px;
-}
-
-.example p{
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
-}
-
-.example pre{
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-}
-
-.example .line-e{
-    border: 1px solid #EAFA86;
-    height: 5px;
-    background-color: #EAFA86;
-    border-radius: 360px;
-}
-
-.animal-ann p{
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
-    margin-left: 100px;
+.-off{
+    display: none !important;
 }
