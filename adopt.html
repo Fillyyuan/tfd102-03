@@ -124,9 +124,8 @@
                 <pre>
 全世界最南端也是最小的老虎
 最喜歡跟飼養員一起玩球了。</pre>
-
-                <a href=""><img src="./images/inadopt/adopt.png" alt="">               
-                </a>
+                
+                <button type="button" class="ado"><img src="./images/inadopt/adopt.png" alt=""></button>
             </div>
 
             <div></div>
@@ -165,7 +164,7 @@
 我可是世界上最高的動物喔，甚至我們的新生嬰兒
 都長約2米。跟我一起站的高高的看這世界吧</pre>
 
-                <a href=""><img src="./images/inadopt/adopt.png" alt="">               
+                <button type="button" class="ado"><img src="./images/inadopt/adopt.png" alt=""></button>               
                 </a>
             </div>
 
@@ -190,7 +189,7 @@
 我可是陸地上最大的食肉動物，海豹、海象根本不是
 我的對手呢!!</pre>
 
-                <a href=""><img src="./images/inadopt/adopt.png" alt="">               
+                <button type="button" class="ado"><img src="./images/inadopt/adopt.png" alt=""></button>               
                 </a>
             </div>
 
@@ -227,7 +226,7 @@
 我們築巢是會在岩石縫隙中或在沙子中挖出個洞，
 爸爸媽媽再合作進行育卵和育雛。</pre>
 
-                <a href=""><img src="./images/inadopt/adopt.png" alt="">               
+                <button type="button" class="ado"><img src="./images/inadopt/adopt.png" alt=""></button>               
                 </a>
             </div>
 
@@ -253,7 +252,7 @@
 我們大大的尾巴是為了保持平衡而且我們可以跳長度
 超過8 m，高度超過2.5 m。</pre>
 
-                <a href=""><img src="./images/inadopt/adopt.png" alt="">               
+                <button type="button" class="ado"><img src="./images/inadopt/adopt.png" alt=""></button>               
                 </a>
             </div>
 
@@ -291,12 +290,81 @@
 海拔2500 m的落葉林。我通常都是單獨行動。而身上
 的斑駁圖案看起來像雲呢。</pre>
 
-                <a href=""><img src="./images/inadopt/adopt.png" alt="">               
+                <button type="button" class="ado"><img src="./images/inadopt/adopt.png" alt=""></button>               
                 </a>
             </div>
 
             <div></div> 
         </div>
+
+        <section class="mainprocess">
+            <ul class="process">
+                <li>Step1</li>
+                <li>Step2</li>
+                <li>Step3</li>
+                <li>Step4</li>
+                <li>Step5</li>
+            </ul>
+
+            <div class="step1">
+                <label for="animal">選擇動物</label><br>
+                <select name="animal" id="animal">
+                    <option value="1">大白</option>
+                    <option value="2">中白</option>
+                    <option value="3">小白</option>
+                </select>
+                <button type="button">確認</button>
+                <br>
+                <label for="a1">已選動物清單</label>
+                <textarea name="a11" id="a1" cols="25" rows="5"></textarea>
+                <button type="button" id="s1_next">下一步</button>
+            </div>
+
+            <div class="step2">
+                
+                <p>登入</p>
+                    
+                <label for="username">帳號
+                    <input type="text" name="username" id="username" placeholder="E-mail/手機">
+                </label>
+                
+                <div class="forque">
+                    <label class="que" for="password">密碼
+                        <input type="password" name="password" id="password" placeholder="請輸入8碼">
+                    </label>
+                </div>
+
+                <div></div>
+                
+                <button type="button" id="s2_login">登入</button>
+                
+            </div>
+
+            <div class="step3">
+
+                <label for="">付款方式</label>
+                <button type="button">信用卡</button>
+                <button type="button">ATM轉帳</button>
+                <button type="button">超商繳費</button>
+
+            </div>
+
+            <div class="step4">
+
+                <label for="">付款成功</label>
+                <button type="button">下一步</button>
+
+            </div>
+
+            <div class="step5">
+
+                <label for="">選擇其他動物</label>
+                <button type="button">再看看?</button>
+
+                <a href="./index.html"><img src="./images/home.png" alt=""></a>
+                
+            </div>    
+        </section>    
 
     </main>
     
@@ -352,8 +420,141 @@
                 ul22.classList.toggle("nav");
             });
         });
-
             
+    </script>
+
+    <script>
+
+        var s1 = document.getElementsByClassName("step1")[0]
+
+        var s1_btn = s1.querySelector("button");
+
+        s1_btn.addEventListener("click", function(){
+
+            let animal = document.getElementById("animal");
+
+            let ani_ran = ["大白", "中白", "小白"]
+
+            // console.log(ani_ran[animal.value - 1])
+
+            let ani_tex = ani_ran[animal.value - 1];
+
+            let a1 = document.getElementById("a1");
+
+            a1.insertAdjacentHTML("beforeend", ani_tex + "\n")
+
+            // console.log(a1.value)    
+        });
+
+        
+        // 按鈕流程
+        var alls = s1.closest("section").children;
+
+        var all_ul = alls[0].children;
+
+        var ado = document.querySelectorAll("button.ado");
+
+        // console.log(ado);
+
+        var s1_next = document.getElementById("s1_next");
+        
+
+        for(let i = 0; i < ado.length; i++){
+
+            ado[i].addEventListener("click", function(){
+
+                let mainprocess = document.getElementsByClassName("mainprocess")[0];
+
+                mainprocess.classList.add("-on");
+
+                all_ul[0].classList.add("spc");
+
+            });
+
+        }; 
+
+
+        s1_next.addEventListener("click", function(){                      
+
+            alls[1].classList.add("-off");
+
+            alls[2].classList.add("-on");
+
+            all_ul[0].classList.remove("spc");
+
+            all_ul[1].classList.add("spc");
+
+        });
+
+        var s2_login = document.getElementById("s2_login");
+
+        s2_login.addEventListener("click", function(){
+
+            let s3 = document.getElementsByClassName("step3")[0]
+            
+            // alls[1].classList.remove("-off")
+
+            alls[2].classList.remove("-on");
+
+            alls[3].classList.add("-onf");
+
+            all_ul[1].classList.remove("spc");
+
+            all_ul[2].classList.add("spc");
+        });
+
+        var s3_pay = alls[3].querySelectorAll("button");
+
+        // console.log(s3_pay)
+        
+        for( let i = 0; i < s3_pay.length; i++){
+
+            s3_pay[i].addEventListener("click", function(){
+
+                alls[3].classList.remove("-onf");
+
+                alls[4].classList.add("-onf");
+
+                all_ul[2].classList.remove("spc");
+
+                all_ul[3].classList.add("spc");
+            });
+        };
+
+        var s4_sus = alls[4].querySelector("button");
+
+        // console.log(s4_sus);
+        
+        s4_sus.addEventListener("click", function(){
+
+            alls[4].classList.remove("-onf");
+
+            alls[5].classList.add("-onf");
+
+            all_ul[3].classList.remove("spc");
+
+            all_ul[4].classList.add("spc");
+        });
+
+        var s5_any = alls[5].querySelector("button");
+
+        // console.log(s4_sus);
+        
+        s5_any.addEventListener("click", function(){
+
+            alls[1].classList.remove("-off");
+
+            alls[5].classList.remove("-onf");
+
+            all_ul[4].classList.remove("spc");
+
+            let mainprocess = document.getElementsByClassName("mainprocess")[0];
+
+                mainprocess.classList.remove("-on");
+        });
+
+
+
     </script>
 </body>
 </html>

@@ -42,6 +42,18 @@
     column-gap: 30px;
 }
 
+@media (max-width: 1199px){
+    .container{
+      flex-direction: column;    
+    }
+    .all_map{
+        order: 2;
+    }
+    .main{
+        padding: 50px 40px;
+    }
+}
+
 .all_map{
     position: relative;
 }
@@ -60,6 +72,16 @@
 .all_btn{
     display: flex;
     flex-direction: column;
+}
+
+@media (max-width: 1199px){
+    .all_btn{
+      flex-direction: row;  
+      column-gap: 10px;  
+    }
+    .all_map img{    
+        width: 100%;    
+    }    
 }
 
 .all_btn > button{
@@ -90,6 +112,54 @@
 
 .all_btn > button:hover img{
     opacity: .4;
+}
+
+@media (max-width: 1199px) and (min-width: 768px){
+    /* .all_btn > button > p{
+      display: block;  
+    }
+
+    .all_btn > button > img{
+        opacity: .4;
+    } */
+
+    .all_btn > button{
+        animation-name: look1;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes look{
+        0%{
+            transform: scale(1);
+        }
+        100%{
+            transform: scale(0.8);
+        }
+    }
+    .all_btn > button{
+        width: 100px;
+    }
+    .all_btn > button > p{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 767.9px){
+    .all_btn > button > p{
+      display: block;  
+    }
+
+    .all_btn > button > img{
+        opacity: .4;
+    }
+
+    .all_btn > button{
+        width: 100px;
+    }
+    .all_btn > button > p{
+        font-size: 20px;
+    }
 }
 
 .all_btn > button:hover p{

@@ -4,10 +4,8 @@
 
 .main{
     max-width: 1200px;
-    /* min-width: 1200px; */
     margin: 0 auto;
     /* border: 1px solid green; */
-    /* background-image: url("../images/bgset/bg02.png"); */
     padding: 50px;
 }
 
@@ -47,12 +45,20 @@
     height: 200px;
 }
 
-.an-tex img{
+.an-tex .ado{
     position: absolute;
     right: 0;
     bottom: 0;
-    display: block;
+    width: 50px;
+    height: 50px;
+    border: 0;
 }
+
+.an-tex .ado:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
 
 .an-exp{
     position: relative;
@@ -120,14 +126,6 @@
 
 
 
-
-
-
-
-
-
-
-
 .adopt{
     padding-bottom: 100px;
     display: flex;
@@ -159,6 +157,215 @@
 }
 
 
+
+
+
+.main > .mainprocess{
+    position: fixed;
+    /* border: 1px solid red; */
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    display: none;
+    background-image: url("../images/inadopt/form.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.process{
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    width: 350px;
+    justify-content: space-evenly;
+    border: 3px solid #A07B14;
+    border-radius: 20px;
+
+}
+
+.process li{
+    font-size: 20px;
+    padding: 5px 10px 5px 5px;
+    border-radius: 0 20px 20px 0;
+    border: 3px solid #A07B14;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+.process li:nth-child(5){
+    border-right: none;
+}
+
+.process li:nth-child(1){
+    padding-left: 10px;
+    /* color: red; */
+}
+
+.step1, .step2, .step3, .step4, .step5{
+    /* border: 1px solid red; */
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* 第一階段 */
+
+.step1 select{
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+}
+.step1 label{
+    /* border: 1px solid blue; */
+    font-size: 24px;
+}
+
+.step1 textarea{
+    resize: none;
+    font-size: 20px;
+}
+
+.step1 #s1_next{
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+    font-size: 20px;
+}
+
+/* 第二階段 */
+
+.step2 p{
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.step2 label{
+    font-size: 24px;
+}
+
+.forque{
+    position: relative;    
+}
+
+input{
+    font-size: 20px;
+    width: 200px;
+    
+}
+
+label.que::after{
+    content: "";
+    /* border: 1px solid blue; */
+    width: 20px;
+    height: 20px;    
+    position: absolute;
+    bottom: 0;
+    background-image: url("../images/inlogin/que.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.step2 #s2_login{
+    margin: 10px auto;
+    padding: 0;
+    display: block;
+    font-size: 20px;
+}
+
+/* 第三階段 */
+
+.step3{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;    
+}
+
+.step3 label{
+    font-size: 24px;
+    align-self: flex-start;    
+}
+
+.step3 button{
+    font-size: 20px;
+    width: 150px;
+}
+
+/* 第四階段 */
+
+.step4{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;    
+}
+
+.step4 label{
+    font-size: 24px;
+      
+}
+
+.step4 button{
+    font-size: 20px;
+    width: 150px;
+}
+
+/* 第五階段 */
+
+.step5{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;    
+}
+
+.step5 label{
+    font-size: 24px;      
+}
+
+.step5 button{
+    font-size: 20px;
+    width: 150px;
+}
+
+.step5 a{
+    align-self: flex-end;
+}
+
+.step5 a img{
+    width: 20px;
+}
+
+.-on{
+    display: block !important;
+}
+
+.-onf{
+    display: flex !important;
+}
+
+.-off{
+    display: none !important;
+}
+
+.step1, .step2, .step3, .step4, .step5{
+    display: none;
+}
+
+.step1{
+    display: block;
+}
+
+.spc{
+    color: red;
+}
 
 
 
