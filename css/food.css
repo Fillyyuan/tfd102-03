@@ -249,5 +249,8 @@
     .d_move > .food_tit{
         font-size: 20px;
     }
+    .drink > img{
+        width: 140px;
+    }
 }
 
