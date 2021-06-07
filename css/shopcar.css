@@ -34,10 +34,33 @@
 .btt-in > p{
     margin: 0;
     padding: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 .btt-c img{
     width: 100px;
 }
+
+.btt-in input{
+    display: inline !important;
+    width: 30px;
+    margin: 5px;
+    padding: 0;
+    text-align: center;
+}
+
+.btt-in button{
+    width: 26px;
+    margin: 5px;
+    padding: 0;
+
+}
+
+
+
+
+
+
 .btt-end{
     text-align: right;
 }
@@ -47,4 +70,26 @@
     background-color: #A07B14;
     color: white;
     /* border: none;     */
+}
+
+
+.btt-emp{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 10px;
+}
+
+.btt-emp button{
+    border: 0px;
+    background-color: #F3EFE9;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.btt-emp button:hover{
+    opacity: 0.8;
+    cursor: pointer;
 }

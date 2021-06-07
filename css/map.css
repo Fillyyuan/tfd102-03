@@ -112,6 +112,11 @@
 
 .all_btn > button:hover img{
     opacity: .4;
+    cursor: pointer;
+}
+
+span#title_map > button > img:hover{
+    cursor: pointer;
 }
 
 @media (max-width: 1199px) and (min-width: 768px){

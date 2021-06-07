@@ -2,6 +2,8 @@
 <html lang="zh-hant">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>information</title>
     <link rel="stylesheet" href="./css/head foot.css">
     <link rel="stylesheet" href="./css/information.css">
@@ -74,21 +76,9 @@
             
             <div class="btt">
                 <p>品項</p>
-                <div class="btt-c">       
-                    <img src="./images/inproduct/1.png" alt="">
-                    <div class="btt-in">
-                        <p>熊貓餐盤</p>
-                        <p>數量:1</p>
-                    </div>
-                    <div></div>
-                </div>
-                <div class="btt-c">       
-                    <img src="./images/infood/d3.png" alt="">
-                    <div class="btt-in">
-                        <p>微笑獅子咖啡</p>
-                        <p>數量:1</p>
-                    </div>
-                    <div></div>
+                <div class="btt-emp">       
+                    <button type="button" id="btn_food">預定餐點</button>
+                    <button type="button" id="btn_product">預定商品</button>
                 </div>
                 <div class="btt-end">
                     <button type="button">結帳</button>
@@ -212,6 +202,23 @@
         });
 
             
+    </script>
+
+    <script>
+        var btn_food =document.getElementById("btn_food");
+
+        btn_food.addEventListener("click", function(){
+        
+            location.href = "./food.html"
+        });
+
+        var btn_product =document.getElementById("btn_product");
+
+        btn_product.addEventListener("click", function(){
+        
+            location.href = "./product.html"
+        });
+
     </script>
 </body>
 </html>
