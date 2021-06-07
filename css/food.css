@@ -4,346 +4,250 @@
 
 .main{
     max-width: 1200px;
-    /* min-width: 1200px; */
     margin: 0 auto;
-    /* border: 1px solid green; */
-    /* background-image: url("../images/bgset/bg02.png"); */
     padding: 50px;
 }
 
 .main > p{
     font-size: 36px;
     font-weight: bold;
+    margin: 0;
+    padding: 0;
+    padding-top: 100px;   
     border-bottom: 10px solid #EAFA86;
-    padding-top: 100px;  
-    margin: 0; 
-    margin-bottom: 36px; 
-}
-
-@media (max-width: 600px){
-    .main > p{
-        font-size: 30px;         
-    }   
-}
-
-
-
-
-
-
-.food1{
-    display: grid;
-    grid-template-columns: auto 650px 1fr;
-    grid-template-rows: 200px;
-    gap: 20px;
-    /* border: 1px solid red; */
-    position: relative;
-}
-
-.food2{
-    display: grid;
-    grid-template-columns: 1fr 650px auto;
-    grid-template-rows: 200px;
-    gap: 20px;
-    position: relative;
-}
-
-@media (max-width: 1000px){   
-    .food1 div:nth-child(1) img{
-        display: none;
-    }
-    .food2 div:nth-child(3) img:nth-child(2){
-        display: none;
-    }    
-}
-
-@media (max-width: 767.9px) and (min-width: 576px){
-    
-    .food1{
-        grid-template-columns: auto 500px 1fr;
-    }
-    .food2{
-        grid-template-columns: 1fr 500px auto;
-    }
-}
-
-@media (max-width: 575.9px){
-    .food1{
-        grid-template-columns: auto 400px 1fr;
-    }
-    .food2{
-        grid-template-columns: 1fr 400px auto;
-    }
-}
-
-
-.tex{    
-    align-self: flex-end;
-    /* border: 1px solid green; */
-    overflow: hidden;
-    
-}
-
-.food2 .tex{
-    text-align: right;
-    overflow: hidden;
-}
-
-.food1 .tex p{
-    padding: 30px 0px 30px 220px;
-    background-color: #EAFA86;
-    margin: 0;    
-    border-radius: 120px;
-    position: relative;
-    left: -450px;    
-}
-
-.f1-ani{
-    animation-name: left;
-    animation-duration: 1s;
-    animation-fill-mode:forwards;
-}
-
-@media (max-width: 1000px){
-    .f1-ani{
-        animation: initial;
-    }
-    .food1 .tex p{        
-        left: 0px;    
-    }
-}
-
-
-@keyframes left {
-    0%{
-        left: -450px;
-    }
-    100%{
-        left: 0;
-    }
-}
-
-.food2 .tex p{
-    padding: 30px 220px 30px 0px;
-    background-color: #EAFA86;
-    margin: 0;    
-    border-radius: 120px;
-    position: relative;    
-    right: -450px; 
-}
-
-.f2-ani{
-    animation-name: right;
-    animation-duration: 1s;
-    animation-fill-mode:forwards;
-}
-
-@media (max-width: 1000px){
-    .f2-ani{
-        animation: initial;
-    }
-    .food2 .tex p{        
-        left: 0px;    
-    }
-}
-
-@keyframes right {
-    0%{
-        right: -450px;
-    }
-    100%{
-        right: 0px;
-    }
-}
-
-.tex p::first-line{
-    font-size: 24px;    
-}
-
-.food1 .tex img{
-    position: absolute;
-    top: 0;
-    left: 120px;
-}
-
-
-.food2 img:first-child{
-    position: absolute;
-    right: 120px;
-}
-
-@media (max-width: 1000px) and (min-width: 768px){    
-    .food1 .tex img{   
-        left: 25px;
-    }
-    .food2 img:first-child{       
-        right: -20px;
-    }   
-    
-}
-
-@media (max-width: 767.9px){    
-    
-    .food1 .tex img{   
-        top: -30px;
-        left: 260px;
-        width: 150px;
-    }
-
-    .food2 img:first-child{       
-        left: 30px;
-        top: -30px;
-        width: 150px;
-    }
-    
-    .food1, .food2{
-        margin-bottom: 50px;
-    }
-    
-    .food2 img:first-child{       
-        right: -20px;
-    }
-    .food1 .tex p, .food2 .tex p{
-        padding: 30px;   
-        max-width: 400px;  
-    }    
-    
-    .main{
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-}
-
-
-
-
-
-
-.food2 .tex p > img{
-    position: relative;
-    left: -500px;
-}
-
-.food2 .tex p a{
-    position: relative;
-    right: 200px;
-    top: 20px;
-    /* border: 1px solid red;  */
-} 
-
-.food2 .tex p a img{    
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-}
-
-.food1 .tex p a{
-    position: relative;
-    right: 70px;
-    top: 20px;
-    /* border: 1px solid red;  */
-} 
-
-.food1 .tex p a img{
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-}
-
-
-@media (max-width: 767.9px){
-    .food1 .tex p a img{
-        left: 100px;
-        top: -10px;
-    }
-    .food2 .tex p a img{    
-        left: -100px;
-        top: -10px;
-    }
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.drink-group1{
-    display: grid;
-    grid-template-columns: auto 3fr auto 4fr 1fr;
-    column-gap: 30px;
     margin-bottom: 50px;
 }
 
-.drink-group2{
-    display: grid;
-    grid-template-columns: 1fr auto 3fr auto 4fr;
-    column-gap: 30px;
-    padding-bottom: 100px;
-}
-
-@media (max-width: 1199px){
-    .drink-group1{
-        grid-template-columns: auto auto; 
-        row-gap: 50px;       
+@media (max-width: 767px){
+    .main > p{
+        font-size: 30px;        
     }
-    .drink-group2 div:nth-child(1){
-       display: none;        
+}
+
+.food-group{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.food-group > .food{
+    display: flex;
+}
+
+.food-group > .food:nth-child(2n) > img{
+    order: 2;
+}
+
+.food-group > .food:nth-child(2n){
+    justify-content: flex-end;
+}
+
+.food-group > .food > img{
+    width: 100px;
+    height: 100px;
+}
+
+@media (max-width: 767px){
+    .food-group > .food > img{
+        display: none;
     }
-    .drink-group2{
-        grid-template-columns: auto auto;   
-        row-gap: 50px;     
-    }    
+}
+
+.p_move{
+    display: flex; 
+    position: relative; 
+    overflow: hidden;  
+}
+
+@media (max-width: 767px){
+    .p_move{
+        flex-direction: column;  
+    }
 }
 
 
-.dr-tex{
-    align-self: flex-end;
-}
-
-.dr-tex p::first-line{
-    font-size: 24px;    
-}
-
-.dr-tex p{
-    font-size: 16px;
-    margin: 0;
-    padding-bottom: 20px;
-    position: relative;
-}
-
-.dr-tex a img{
+.p_move > .buy_car{
     width: 30px;
-    height: 30px;
-    display: block;
-    margin: 0 0 0 80%;
-    /* transform: translateX(-110%); */
+    align-self: flex-end;
+    position: absolute;
+    right: 100%;
+    bottom: 10px;    
 }
 
-.drink-group1 div img, .drink-group2 div img{
-    display: block;
+/* .p_move:hover > .buy_car{
+    right: 5%;
+    transition: 3s;
+} */
+
+.p_move > .mafood{
+    width: 200px;
+    height: 200px;
+    z-index: 3;
 }
 
-@media (max-width: 600px){
-    .drink-group1 > div > img, .drink-group2 > div > img{
-        width: 180px;
-    }    
+@media (max-width: 767px){
+    .p_move > .mafood{
+        width: 160px;
+        height: 160px;
+    }
+    .p_move > .buy_car{        
+        right: 5%;
+    }
 }
 
-.header > ul > li:nth-child(3) a{
-    color: #EAFA86;
+.p_move > div{
+    align-self: flex-end;
+    width: 450px;
+    background-color: #EAFA86;
+    padding: 25px 10px 50px 25px;
+    border-radius: 50px;
+    transform: translateX(-100%);    
+}
+
+@media (max-width: 767px){
+    .p_move > div{        
+        padding: 20px;
+        width: 300px;
+        transform: translateX(0);
+    }
+}
+
+/* .p_move:hover > div{
+    transform: translateX(0);
+    transition: 3s;
+} */
+
+.p_move > div > p{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.p_move > div > p.food_tit{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+@media (max-width: 767px){
+    .p_move > div > p{
+        font-size: 16px;
+    }
+    .p_move > div > p.food_tit{
+        font-size: 20px;
+    }
+}
+
+.food:nth-child(2n) > .p_move > div{
+    order: 2;
+    transform: translateX(100%);
+}
+
+/* .food:nth-child(2n) > .p_move:hover > div{
+    transform: translateX(0%);
+} */
+
+.food:nth-child(2n) > .p_move > .buy_car{
+    order: 1;
+    left: 100%;
+}
+
+/* .food:nth-child(2n) > .p_move:hover > .buy_car{
+    left: 5%;
+} */
+
+.food:nth-child(2n) > .p_move > .mafood{
+    order: 3;
+}
+
+@media (max-width: 767px){
+    .food:nth-child(2n) > .p_move > div{
+        order: 3;
+        transform: translateX(0%);
+    }
+    .food:nth-child(2n) > .p_move > .buy_car{
+        order: 2;
+        left: 80% !important;
+    }
+    .food:nth-child(2n) > .p_move > .mafood{
+        order: 1;
+    }
+}
+
+.fd1{
+    transform: translateX(0) !important;
+    transition: 1.5s;
+}
+
+.fc1{
+    right: 5% !important;
+    transition: 1.5s;
+}
+
+.fd2{
+    transform: translateX(0) !important;
+    transition: 1.5s;
+}
+
+.fc2{
+    left: 5% !important;
+    transition: 1.5s;
+}
+
+
+/* 甜點 */
+
+.drink-group{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+}
+
+@media (max-width: 991px){
+    .drink-group{        
+        grid-template-columns: auto;
+    }
+}
+
+.drink{
+    display: flex;
+    align-items: center;
+    position: relative;
+    column-gap: 10px;
+}
+
+.drink > .d_move > img.mafood{
+    display: none;
+}
+
+.drink > img{
+    width: 180px;
+}
+
+.d_move > p{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.d_move > .food_tit{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.d_move > .buy_car{
+    width: 30px;
+    position: absolute;
+    right: 5%;
+}
+
+@media (max-width: 767px){
+    .d_move > p{
+        font-size: 16px;
+    }
+    .d_move > .food_tit{
+        font-size: 20px;
+    }
 }
 
