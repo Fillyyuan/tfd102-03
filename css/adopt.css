@@ -23,7 +23,16 @@
     height: 8px;
     background-color: #BCD238;
     border-radius: 360px; 
-    width: 400px;   
+}
+
+.an-tex{
+    width: 400px;
+}
+
+@media screen and (max-width: 575.9px){
+    .an-tex{
+        width: 300px;
+    }
 }
 
 .an-tex p{
@@ -33,7 +42,7 @@
     padding-left: 0;
 }
 
-.an-tex pre{
+.an-tex .prr{
     font-size: 16px;
     padding: 10px;
     margin: 0;
@@ -156,6 +165,8 @@
 .main .adopt:nth-child(6) .an-exp > img{
     width: 370px;
 }
+
+
 
 
 
