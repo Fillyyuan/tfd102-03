@@ -78,6 +78,8 @@
     background-image: url("../images/inmaptem/Group\ 201.png");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
     padding-top: 50px;
     display: grid;
     grid-template-columns: auto; 
@@ -130,17 +132,22 @@
         padding-bottom: 50px;
     }
     .example img{        
-        margin-right: 20px;
-    }
-    .example p{        
-        width: 250px;
-    }
+        margin-right: 0px;
+    }    
     .ann :nth-child(2n){
         justify-content: flex-start;
-    }
-    
+    }    
     .ann :nth-child(3), .ann :nth-child(7){
         justify-content: flex-start;
+    }
+    .example{
+        flex-direction: column;
+    }
+    .example div{        
+        display: none;
+    }
+    .onff{
+        display: flex !important;
     }
 }
 

@@ -305,5 +305,28 @@
         });
 
     </script>
+
+    <script>
+        var nedu = document.querySelectorAll("div.example")
+        // console.log(nedu)
+
+        nedu.forEach(function(item, index){
+
+            let exing = item.firstElementChild
+            // console.log(exap);
+            let exexp = item.lastElementChild
+            // console.log(exexp);
+
+            exing.addEventListener("click", function(){
+
+                exexp.classList.toggle("onff");
+            });
+
+        });
+
+
+
+
+    </script>
 </body>
 </html>
