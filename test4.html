@@ -2,9 +2,11 @@
 <html lang="zh-hant">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    <!-- <link rel="stylesheet" href="./css/head foot.css"> -->
-    <link rel="stylesheet" href="./css/test5.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>center</title>
+    <link rel="stylesheet" href="./css/head foot.css">
+    <link rel="stylesheet" href="./css/test4.css">
     <link rel="stylesheet" href="./css/shopcar.css">
     <link rel="stylesheet" href="./css/hamburgers.css">
 </head>
@@ -29,12 +31,14 @@
                     <li><a href="./temperate.html">熱帶地區</a></li>
                     <li><a href="./temperate.html">極地地區</a></li>
                 </ul>
+
                 <ul class="park-route">
                     <li>路線</li>
                     <li><a href="./route.html">親子路線</a></li>
                     <li><a href="./route.html">情侶路線</a></li>
                     <li><a href="./route.html">個人路線</a></li>
-                </ul>
+                </ul>     
+                
             </li>
             <li>
                 <a href="./food.html">特色餐廳</a>
@@ -49,6 +53,7 @@
                 <a href="./information.html">參觀資訊</a>
             </li>            
         </ul>
+
         <div class="impcon">
         
             <div class="login">
@@ -71,21 +76,9 @@
             
             <div class="btt">
                 <p>品項</p>
-                <div class="btt-c">       
-                    <img src="./images/inproduct/1.png" alt="">
-                    <div class="btt-in">
-                        <p>熊貓餐盤</p>
-                        <p>數量:1</p>
-                    </div>
-                    <div></div>
-                </div>
-                <div class="btt-c">       
-                    <img src="./images/infood/d3.png" alt="">
-                    <div class="btt-in">
-                        <p>微笑獅子咖啡</p>
-                        <p>數量:1</p>
-                    </div>
-                    <div></div>
+                <div class="btt-emp">       
+                    <button type="button" id="btn_food">預定餐點</button>
+                    <button type="button" id="btn_product">預定商品</button>
                 </div>
                 <div class="btt-end">
                     <button type="button">結帳</button>
@@ -97,102 +90,202 @@
                 <span class="hamburger-inner"></span>
                 </span>
             </button>
-        </div> 
+        </div>
+    
+        
     </header>
 
     <main class="main">
-        <div class="route">
 
-            <div class="route-title">
+        <p>會員中心</p>
 
-                <img class="d11" src="./images/fortest/rf1.png" alt="">
-                <p>遊園路線</p>
-                <img class="d12" src="./images/fortest/rf2.png" alt="">
-    
-            </div>
+        <div class="food">
+            <p>預定餐點</p>
 
-            <div class="family" id="familyid">
-                <img src="./images/homeroute/family.png" alt="">
-                
-                <!-- <div></div> -->
-                
-                <div class="forwalk">
-                    <p class="f-tit">遊園路線-親子</p>
-                    <br>
-                    <P>
-                    入口->溫帶動物區->特色餐廳->極地動物區->紀念品商店->快樂返家
-                    <br>
-                    <br>在這寒冷的天氣，一家人一定要好好抱一個取個暖，感受一下親情的可貴
-                    </p>
+            <div class="food-con">
+
+                <div class="foo">
                     
-                    <a href="./route.html">
-                        <div class="walk">
-                            <img src="./images/walking.png" alt="">
-                        </div>
-                    </a> 
-                </div>                 
-            </div>
-            
-            <div class="couple" id="coupleid">
+                    <input type="checkbox" class="cb" id="cb9" ><label for="cb9"></label>
                 
-                <div class="forwalk">
-                    <p class="f-tit">遊園路線-情侶</p>                
-                    <br>
-                    <p>
-                    入口->非洲動物區->特色餐廳->鳥園->紀念品商店->快樂返家
-                    <br>
-                    <br>雄赳赳氣昂昂的獅子王與他的王后相依著，還不快來看看我們嗎
-                    </p>
-                    <a href="./route.html">
-                        <div class="walk">
-                            <img src="./images/walking.png" alt="">
-                        </div>
-                    </a>
-                </div> 
-                
-                <!-- <div></div> -->
-                <img src="./images/homeroute/couple.png" alt="">
-    
-            </div>
-    
-            <div class="single" id="singleid">
-                <img src="./images/homeroute/single.png" alt="">
-                
-                <!-- <div></div> -->
-                
-                <div class="forwalk">
+                    <p>品項</p>
+                    <div class="beused"></div>
+                    <div>
+                        <p>結帳</p>
+
+                        <p>兌換</p>
+                    </div>
+
+                </div>
+
+                <div class="foo">
                     
-                    <p class="f-tit">遊園路線-個人</p>
-                    <br>
-                    <p>
-                        入口->鳥園->特色餐廳->溫帶動物區->極地動物區->紀念品商店
-                    <br>->快樂返家
-                    <br>
-                    <br>我有著孤獨的靈魂，乘風翱翔著，快跟上我的步伐吧!!
-                    </p>
-                    <a href="./route.html">
-                        <div class="walk">
-                            <img src="./images/walking.png" alt="">
-                        </div> 
-                    </a>   
-                </div>              
+                    <input type="checkbox" class="cb" id="cb1" checked><label for="cb1"></label>
+
+                    <p>熊熊造型麵包</p>
+                    <div class="beused"></div>
+                    <div>
+                        <input type="checkbox" class="cb" id="cb2"><label for="cb2"></label>
+
+                        <img class="tic" src="./images/incenter/ticket.png" alt="">
+                    </div>
+
+                </div>
+
+                <div class="foo">
+                    
+                    <input type="checkbox" class="cb" id="cb3" ><label for="cb3"></label>
+
+                    <p>微笑獅子咖啡</p>
+                    <div class="beused"></div>
+                    <div>
+                        <input type="checkbox" class="cb" id="cb4" checked><label for="cb4"></label>
+
+                        <img class="tic" src="./images/incenter/ticket.png" alt="">
+                    </div>
+
+                </div>
+
             </div>
-    
         </div>
-    </main>
 
+        <div class="food">
+            <p>預定商品</p>
+
+            <div class="food-con">
+
+                <div class="foo">
+                    
+                    <input type="checkbox" class="cb" id="cb10" ><label for="cb10"></label>
+                
+                    <p>品項</p>
+                    <div class="beused"></div>
+                    <div>
+                        <p>結帳</p>
+
+                        <p>兌換</p>
+                    </div>
+
+                </div>
+
+                <div class="foo">
+                    
+                    <input type="checkbox" class="cb" id="cb5" ><label for="cb5"></label>
+
+                    <p>飢餓河馬筆筒</p>
+                    <div class="beused"></div>
+                    <div>
+                        <input type="checkbox" class="cb" id="cb6" checked><label for="cb6"></label>
+
+                        <img class="tic" src="./images/incenter/ticket.png" alt="">
+                    </div>
+
+                </div>
+
+                <div class="foo">
+                    
+                    <input type="checkbox" class="cb" id="cb7" checked><label for="cb7"></label>
+
+                    <p>鹿造型書擋</p>
+                    <div class="beused"></div>
+                    <div>
+                        <input type="checkbox" class="cb" id="cb8"><label for="cb8"></label>
+
+                        <img class="tic" src="./images/incenter/ticket.png" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <p>動物認養專區</p>
+
+        <div class="adopt-con">
+
+            <div class="adopt">
+                <div>
+                    <img src="./images/incenter/1.png" alt="">
+                </div>
+
+                <div class="tex">
+                    <p class="p1">小小</p>
+                    <p class="p2">已認養：3個月</p>
+                </div>
+
+                <div class="exchange">
+                    <img class="img1" src="./images/incenter/ticket.png" alt="">
+                    <img src="./images/incenter/photo.png" alt="">
+                </div>
+            </div>
+
+            <div class="adopt">
+                <div>
+                    <img src="./images/incenter/2.png" alt="">
+                </div>
+
+                <div class="tex">
+                    <p class="p1">大白</p>
+                    <p class="p2">已認養：7個月</p>
+                </div>
+
+                <div class="exchange">
+                    <img class="img1" src="./images/incenter/ticket.png" alt="">
+                    <img src="./images/incenter/photo.png" alt="">
+                </div>
+            </div>
+
+            <div class="adopt">
+                <div>
+                    <img src="./images/incenter/3.png" alt="">
+                </div>
+
+                <div class="tex">
+                    <p class="p1">管管</p>
+                    <p class="p2">已認養：10個月</p>
+                </div>
+
+                <div class="exchange">
+                    <img class="img1" src="./images/incenter/ticket.png" alt="">
+                    <img src="./images/incenter/photo.png" alt="">
+                </div>
+            </div>
+
+            <div class="adopt">
+                <div>
+                    <img src="./images/incenter/4.png" alt="">
+                </div>
+
+                <div class="tex">
+                    <p class="p1">小黑</p>
+                    <p class="p2">已認養：8個月</p>
+                </div>
+
+                <div class="exchange">
+                    <img class="img1" src="./images/incenter/ticket.png" alt="">
+                    <img src="./images/incenter/photo.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+
+    </main>
+    
     <footer class="footer">
 
         <div class="logo">
             <a href=""><img src="./images/logo.png" alt=""></a>
         </div>
 
-<pre>
-本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，
-本平台僅供學習、展示之用。參考資源:天王寺動物園/
-よこはま動物園/臺北市立動物園。若有侵權疑慮，您可以
-私訊[TibaMe-前端設計工程師養成班]後續會由專人協助處理
-※[TibaMe-前端設計工程師養成班]</pre>
+        <p>
+            本網站為緯育TibaMe前端設計工程師班第68期學員專題作品
+            本平台僅供學習、展示之用。參考資源:天王寺動物園/
+            よこはま動物園/臺北市立動物園。若有侵權疑慮，您可以
+            私訊[TibaMe-前端設計工程師養成班]後續會由專人協助處理
+            ※[TibaMe-前端設計工程師養成班]
+        </p>
 
         <div class="social">
 
@@ -218,58 +311,41 @@
         
     </footer>
 
-<script src="/vendors/jquery/jquery-3.5.1.min.js"></script>    
-<script>
+    <script src="./vendors/jquery/jquery-3.5.1.min.js"></script>    
+    <script>
 
-    let ul22 = document.getElementById("ul22");      
+        let ul22 = document.getElementById("ul22");
+        // let a = true;
+        
+        $(function(){  
+            // hamburger icon 的切換
+            $("button.hamburger").on("click", function(){
+                
+                $(this).toggleClass("is-active");
 
-    console.log(ul22);
+                ul22.classList.toggle("nav");
 
-    $(function(){  
-        // hamburger icon 的切換
-        $("button.hamburger").on("click", function(){
-
-            $(this).toggleClass("is-active");
-
-            ul22.classList.toggle("nav");
-
+            });
         });
-    });
 
+            
+    </script>
+
+    <script>
+        var btn_food =document.getElementById("btn_food");
+
+        btn_food.addEventListener("click", function(){
         
-</script>
+            location.href = "./food.html"
+        });
 
-<script>
-    var ff, cc, ss;
+        var btn_product =document.getElementById("btn_product");
 
-    ff = document.getElementById("familyid")
-
-    cc = document.getElementById("coupleid")
-
-    ss = document.getElementById("singleid")
-
-    // console.log(cc);     
-    
-
-    document.addEventListener('scroll',() => {
-
-        console.log(scrollY)
+        btn_product.addEventListener("click", function(){
         
-        if(scrollY > 50){ 
-            ff.classList.add('family-on');
-        }
-        if(scrollY > 350){    
-            cc.classList.add('couple-on');
-        }
-        if(scrollY > 650){      
-            ss.classList.add('single-on');
-        }        
-    });
+            location.href = "./product.html"
+        });
 
-
-</script>
-
-
-
+    </script>
 </body>
 </html>

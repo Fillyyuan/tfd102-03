@@ -118,11 +118,18 @@ ul.park-area li a, ul.park-route li a{
     
     .header ul li:nth-child(2):hover ul{
         display: grid;
-    }
-    
-    
+    }  
 }
 
+@media (max-width:470px){
+    ul.park-area, ul.park-route{
+        display: none;
+        /* display: grid; */
+        grid-template-columns: 1fr 52px 52px 52px;
+        align-items: center;
+        column-gap: 30px;
+    }
+}
 
 .header .impcon{
     display: flex;

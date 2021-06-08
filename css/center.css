@@ -4,10 +4,8 @@
 
 .main{
     max-width: 1200px;
-    /* min-width: 1200px; */
     margin: 0 auto;
     /* border: 1px solid green; */
-    /* background-image: url("../images/bgset/bg02.png"); */
     padding: 50px;
 }
 
@@ -30,7 +28,7 @@
     border-bottom: 10px solid #EAFA86;
     max-width: 1000px;
 }
-
+/*
 .food-con, .product-con{
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -41,7 +39,86 @@
     font-size: 20px;
     align-items: center;
     padding-left: 20px;
+} */
+
+.food-con{
+    display: flex;
+    flex-direction: column;
 }
+
+.foo > .beused{
+    display: none;
+}
+
+.foo{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 20px 200px 180px;
+    justify-items: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.foo p{
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+
+.foo:first-child p{
+    font-weight: bold;
+}
+
+.foo:first-child label{
+    visibility: hidden;
+}
+
+.foo > div{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    /* border: 1px solid blue; */
+}
+
+.foo > div > img{
+    margin-left: 10px;
+}
+
+.foo > div > label{
+    margin-left: 15px;
+}
+
+@media (max-width: 575px){
+    .foo > .beused{
+        display: block;
+    }
+    .foo{
+        grid-template-columns: 30px 160px;
+    }
+    .foo > label{
+        position: relative;
+        top: 60%;
+    }
+    .foo:nth-of-type(1) > div {
+        padding: 0 20px;
+        background-color: #75673F;
+        color: white;
+        border-radius: 30px;
+        margin-bottom: 15px;
+    }
+    .foo p{
+        font-size: 16px;
+    }
+    .foo:nth-of-type(1) > p{
+        font-size: 24px;
+    }
+}
+
+
+
+
+
+
 
 .food-con .cb, .product-con .cb{
     display: none;    
@@ -64,6 +141,18 @@
 .tic{
     transform: scale(0.8);
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 .adopt-con{
     display: grid;
