@@ -8,6 +8,8 @@ var shopcar = document.getElementsByClassName("btt")[0].children[0];
 
         item.addEventListener("click", function(){
 
+            alert("已加入購物車");
+
             let product_name = item.closest("div").querySelector("p.food_tit").outerHTML
             // console.log(product_name);
             let product_pit = item.closest("div").querySelector("img.mafood").outerHTML

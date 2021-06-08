@@ -8,6 +8,8 @@ var shopcar = document.getElementsByClassName("btt")[0].children[0];
 
         item.addEventListener("click", function(e){
 
+            alert("已加入購物車");
+
             let product_name = item.previousElementSibling.outerHTML;
             // console.log(product_name);
             let product_pit = item.closest("div.p_inn").children[0].outerHTML;
