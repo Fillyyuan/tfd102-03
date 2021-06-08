@@ -227,8 +227,34 @@ ul.park-area li a, ul.park-route li a{
     grid-template-columns: auto auto auto;
     align-items: flex-end;    
     justify-content: space-around;
-    background-color: #75673F;    
+    background-color: #75673F;  
+    padding: 0 150px;  
 }
+
+@media (max-width: 1199px) and (min-width: 992px){
+    .footer{
+        padding: 0 100px;    
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px){
+    .footer{
+        padding: 0 50px;    
+    }
+}
+
+@media (max-width: 767px) and (min-width: 576px){
+    .footer{
+        padding: 0 30px;    
+    }
+}
+
+@media (max-width:575.9px){
+    .footer{
+        padding: 0 20px;    
+    }       
+}
+
 
 .footer p{
     align-self: center;
