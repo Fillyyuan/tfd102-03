@@ -621,22 +621,24 @@ div.svg p.content{
         margin-bottom: 200px;        
     }
     .reimg > img.a11{
-        width: 100%;
+        max-width: 100%;
         border-radius: 30px;               
     }
     .reimg .a12{        
-        left: 300px;
-        bottom: -5%;
-        width: 150px;   
+        left: 10%;
+        /* transform: translateX(-50%); */
+        top: 10%;
+        max-width: 20%;   
         z-index: 99;     
     }    
     .reimg .b12{        
-        width: 460px;
-        /* height: 140px; */
+        max-width: 70%;
+        max-height: 80%;
         font-size: 16px;        
         padding: 10px;
-        right: 3%;
-        bottom: -70%;          
+        right: 0;
+        top: 10%;
+        overflow-y: scroll;
     }
 
     
@@ -753,7 +755,7 @@ input{
     transition: 2s;
 }
 
-@media (max-width: 767.9px){
+@media (max-width: 767.9px) and (min-width: 576px){
     
     
     .meal{
@@ -793,6 +795,49 @@ input{
         left:265px;
     }
     
+}
+
+
+@media (max-width: 575.9px){
+    .food-img{
+        grid-template-columns: 140px 140px 140px 140px;
+        row-gap: 20px;
+    }
+    .meal{    
+        width: 150px;
+        height: 340px; 
+        margin-top: -150px;     
+    }
+    .meal input:nth-of-type(1):checked~.food-img{
+        left:-1.5%;
+        transition: 1s;
+    }
+    .meal input:nth-of-type(2):checked~.food-img{
+        left:-102%;
+        transition: 2s;
+    }
+    .meal input:nth-of-type(3):checked~.food-img{
+        left:-202.5%;
+        transition: 2s;
+    }
+    .meal input:nth-of-type(4):checked~.food-img{
+        left:-303%;
+        transition: 2s;
+    }    
+
+    .meal label:nth-of-type(1){
+        left:0px;
+    }
+    .meal label:nth-of-type(2){
+        left:35px;
+    }
+    .meal label:nth-of-type(3){
+        left:70px;
+    }
+    .meal label:nth-of-type(4){
+        left:105px;
+    }
+
 }
 
 
@@ -1071,7 +1116,8 @@ input{
         width: 80%;
         height: 100px;
         font-size: 20px;
-        margin-top: 80px;    
+        margin-top: 80px;   
+        padding: 20px; 
     }
 }
 
@@ -1081,14 +1127,11 @@ input{
 /* 動物認養 */
 div.animal_adopt{
     column-count: 3;
-    column-gap: 20px;    
-    height: 900px;
+    column-gap: 20px; 
     text-align: center;    
     margin: 0 auto;
-    margin-top: 150px;
-    padding: 50px;
-    column-fill: balance;
-    
+    /* margin-top: 150px; */
+    padding: 50px;    
 }
 
 div.animal_adopt div{
@@ -1096,43 +1139,23 @@ div.animal_adopt div{
 }
 
 div.animal_adopt div img{
-    width: 100%;
+    max-width: 100%;
     border-radius: 30px; 
-    display: block;   
+    /* display: block;    */
+}
+
+@media (min-width: 1040px){
+    div.animal_adopt{
+        height: 900px;
+    }    
 }
 
 @media (max-width: 575.9px){
-    div.animal_adopt{
-        height: 430px;
-        margin-top: 50px;
-        padding: 10px;
-        width: 95%;
-        column-gap: 10px;
+    div.animal_adopt{        
+       margin-bottom: -50px;
     }
     div.animal_adopt div img{        
-        border-radius: 15px;            
-    }
-}
-
-@media (max-width: 767px) and (min-width: 576px){
-    div.animal_adopt{
-        height: 600px;
-        margin-top: 50px;
-        padding: 20px;
-        column-gap: 15px;
-    }
-    div.animal_adopt div img{        
-        border-radius: 15px;            
-    }
-}
-@media (max-width: 991px) and (min-width: 768px){
-    div.animal_adopt{
-        height: 750px;
-        margin-top: 50px;
-        padding: 30px;
-    }
-    div.animal_adopt div img{        
-        border-radius: 15px;            
+        border-radius: 15px;         
     }
 }
 

@@ -113,6 +113,12 @@
     }
 }
 
+@media (max-width: 400px){
+    .p_move > div{  
+        width: 270px;
+    }
+}
+
 /* .p_move:hover > div{
     transform: translateX(0);
     transition: 3s;
