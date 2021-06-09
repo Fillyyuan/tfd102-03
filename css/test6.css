@@ -200,6 +200,7 @@ div.svg p.content{
     display: flex;
     flex-direction: column;
     row-gap: 30px;
+    overflow: hidden;
 }
 
 .route-title{
@@ -264,9 +265,8 @@ div.svg p.content{
     align-items: center;
     /* width: 1000px; */
     margin: 0 auto;
-    overflow: hidden;
+    /* border: 1px solid red; */
 }
-
 
 .family, .single{
     transform: translateX(-120%);
