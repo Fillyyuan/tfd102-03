@@ -357,6 +357,8 @@
                 <a href=""><img src="./images/homeadopt/9.png" alt=""></a>
             </div>
         </div>
+
+        <div id="btop"><img src="./images/totop.png" alt=""></div>
         
     </main>
     
@@ -431,6 +433,25 @@
         
             location.href = "./product.html"
         });
+
+    </script>
+
+    <script>
+
+        var btop = document.getElementById("btop");
+
+                
+        btop.addEventListener("click", function(){
+            if(scrollY > 0){
+                document.body.scrollTop = 0; 
+
+                document.documentElement.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });                
+            }
+        });
+      
 
     </script>
 </body>
