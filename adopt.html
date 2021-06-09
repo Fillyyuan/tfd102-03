@@ -451,6 +451,10 @@
         // console.log(ado);
 
         var s1_next = document.getElementById("s1_next");
+
+        var mainop = document.getElementsByClassName("main")[0];        
+        // console.log(mainop.children);
+        var mainops = mainop.children
         
 
         for(let i = 0; i < ado.length; i++){
@@ -462,6 +466,11 @@
                 mainprocess.classList.add("-on");
 
                 all_ul[0].classList.add("spc");
+               
+                for(let j = 0; j < mainops.length-1; j++){
+
+                    mainops[j].style.opacity=".5"
+                };                
                 
             });
 
@@ -544,17 +553,15 @@
 
             let mainprocess = document.getElementsByClassName("mainprocess")[0];
 
-                mainprocess.classList.remove("-on");
+            mainprocess.classList.remove("-on");
+
+            for(let j = 0; j < mainops.length-1; j++){
+
+                mainops[j].style.opacity="1"
+            }; 
         });
 
-        // document.addEventListener("click", function(e){
-
-        // let bod1 = e.target.closest("section.mainprocess")
-
-        //     if(!bod1){
-        //         console.log(123);
-        //     }
-        // });  
+        
 
 
     </script>
