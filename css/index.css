@@ -200,6 +200,7 @@ div.svg p.content{
     display: flex;
     flex-direction: column;
     row-gap: 30px;
+    overflow: hidden;
 }
 
 .route-title{
@@ -269,11 +270,11 @@ div.svg p.content{
 
 
 .family, .single{
-    transform: translateX(-120%);
+    transform: translateX(-120%) translateY(80%);
 }
 
 .couple{
-    transform: translateX(120%);
+    transform: translateX(120%) translateY(-80%);;
 }
 
 .backz{
@@ -283,7 +284,7 @@ div.svg p.content{
 
 @media (max-width: 767.9px){
     .family, .couple, .single{
-        transform: translateX(0%) !important;
+        transform: translate(0%) !important;
     }
 }
 
