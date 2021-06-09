@@ -53,7 +53,11 @@ var shopcar = document.getElementsByClassName("btt")[0].children[0];
             btn_less.addEventListener("click", function(){
 
                 if(inp.value == 1){
-                    alert("不能再少啦~~")
+                    let checks = confirm("確認刪除");
+                    if(checks){
+                        // console.log(btn_less.closest("div.btt-c"));
+                        btn_less.closest("div.btt-c").remove();
+                    }
                 }else{
                     let inp_value = inp.value
 
