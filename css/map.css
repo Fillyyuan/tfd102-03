@@ -178,3 +178,7 @@ span#title_map > button > img:hover{
 .-off{
     display: none !important;
 }
+
+.header > ul > li:nth-child(2) > a{
+    color: #EAFA86;
+}
