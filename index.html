@@ -434,6 +434,13 @@
             location.href = "./product.html"
         });
 
+        var sca = document.getElementById("btnc").nextElementSibling.querySelector("svg");
+        // console.log(sca)
+
+        sca.addEventListener("click", function(){
+            sca.classList.toggle("svgg")
+        })
+
     </script>
 
     <script>
@@ -462,7 +469,7 @@
         var routec = route.children;        
 
         for( let i = 1; i < routec.length; i++){
-            console.log(routec[i])
+            // console.log(routec[i])
 
             document.addEventListener("scroll", function(){
 
