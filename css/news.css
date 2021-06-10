@@ -70,6 +70,23 @@
     
 }
 
+@media (max-width: 400px){
+    .p-new{
+        /* border: 1px solid red; */
+        padding-bottom: 50px;
+    }
+    .p-new p{        
+        /* border: 1px solid black; */
+        padding: 20px 30px;
+        height: 200px;
+        overflow-y: scroll;
+    }
+    .main img{           
+        margin-bottom: 30px;
+    }
+    
+}
+
 
 
 
