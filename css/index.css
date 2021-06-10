@@ -648,20 +648,20 @@ div.svg p.content{
         border-radius: 30px;               
     }
     .reimg .a12{        
-        left: 10%;
-        /* transform: translateX(-50%); */
-        top: 10%;
-        max-width: 20%;   
+        /* right: 80%; */
+        transform: translateX(160%);
+        top: 5%;
+        max-width: 25%;   
         z-index: 99;     
     }    
     .reimg .b12{        
-        max-width: 70%;
-        max-height: 80%;
+        max-width: 90%;
+        height: 200px;
         font-size: 16px;        
         padding: 10px;
-        right: 0;
-        top: 10%;
-        overflow-y: scroll;
+        right: 8%;
+        top: 50%;
+        padding-top: 30px;
     }
 
     
@@ -685,12 +685,11 @@ div.svg p.content{
     }
 }
 
-
-
-
-
-
-
+@media (max-width: 400px){
+    .reimg .b12{   
+        padding-top: 10px;
+    }
+}
 
 
 .meal{    
@@ -825,11 +824,13 @@ input{
     .food-img{
         grid-template-columns: 140px 140px 140px 140px;
         row-gap: 20px;
+        column-gap: 20px;
     }
     .meal{    
-        width: 150px;
+        width: 320px;
         height: 340px; 
-        margin-top: -150px;     
+        margin-top: -50px; 
+        /* border: 1px solid red;     */
     }
     .meal input:nth-of-type(1):checked~.food-img{
         left:-1.5%;
@@ -849,16 +850,18 @@ input{
     }    
 
     .meal label:nth-of-type(1){
-        left:20px;
+        left:130px;
     }
     .meal label:nth-of-type(2){
-        left:55px;
+        left:165px;
     }
     .meal label:nth-of-type(3){
-        left:90px;
+        /* left:90px; */
+        display: none;
     }
     .meal label:nth-of-type(4){
-        left:125px;
+        /* left:125px; */
+        display: none;
     }
 
 }

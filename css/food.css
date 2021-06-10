@@ -8,6 +8,12 @@
     padding: 50px;
 }
 
+@media (max-width: 450px){
+    .main{        
+        padding: 30px;
+    }
+}
+
 .main > p{
     font-size: 36px;
     font-weight: bold;
@@ -16,11 +22,54 @@
     padding-top: 100px;   
     border-bottom: 10px solid #EAFA86;
     margin-bottom: 50px;
+    position: relative;
 }
+
+.main > p > img{
+    margin-left: 30%;
+    width: 70px;
+    transform: translateY(-60%);
+    animation-name: scrollmo;
+    animation-duration: 2s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes scrollmo{
+    0%{
+        transform: translateY(-60%); 
+    }
+    25%{
+        transform: translateY(-30%); 
+    }
+    50%{
+        transform: translateY(0%); 
+    }
+    75%{
+        transform: translateY(30%); 
+    }
+    100%{
+        transform: translateY(60%); 
+    }
+}
+
+.main > p > input{
+    border: 0;
+    background-color: #F3EFE9;
+    font-size: 20px;
+    transform: translateY(-100%);
+}
+
 
 @media (max-width: 767px){
     .main > p{
         font-size: 30px;        
+    }
+    .main > p > img{
+        display: none;
+    }
+    .main > p > input{
+        display: none;
     }
 }
 

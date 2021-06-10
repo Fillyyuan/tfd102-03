@@ -29,6 +29,16 @@
     width: 400px;
 }
 
+.ado{
+    position: relative;
+}
+.ado > div{
+    position: absolute;
+    font-size: 20px;
+    top: 10%;
+    left: -140%;
+}
+
 @media screen and (max-width: 575.9px){
     .an-tex{
         width: 300px;

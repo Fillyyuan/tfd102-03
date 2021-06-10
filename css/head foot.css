@@ -69,6 +69,11 @@ body{
     z-index: 999;
 }
 
+/* 新家的 */
+.header > ul > li:nth-child(2) > img{
+    display: none;
+}
+
 ul.park-area, ul.park-route{
     display: none;
     position: absolute;
@@ -115,10 +120,21 @@ ul.park-area li a, ul.park-route li a{
         top: 85px;        
         border-radius: 0 0 20px 20px;
     }
+
+/* 新家的 */
     
     .header ul li:nth-child(2):hover ul{
-        display: grid;
+        display: none;
     }  
+
+    .header > ul > li:nth-child(2) > img{
+        display: inline;        
+        width: 20px;
+        margin-right: -42px;
+        margin-left: 20px;
+    }
+
+
 }
 
 @media (max-width:470px){
@@ -326,7 +342,14 @@ ul.nav{
     fill: #EAFA86 !important;
 }
 
+.dgrid{
+    display: grid !important;
+}
 
+.rota{
+    transform: rotate(180deg);
+    transition: 1s;
+}
 
 
 

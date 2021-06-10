@@ -23,7 +23,8 @@
                 <a href="./news.html">最新消息</a>
             </li>
             <li>
-                <a href="./map.html">園區導覽</a>                
+                <a href="./map.html">園區導覽</a> 
+                <img src="./images/more.png" alt="" srcset="">                
                 
                 <ul class="park-area">
                     <li>地區</li>
@@ -47,7 +48,7 @@
                 <a href="./product.html">商品專區</a>
             </li>
             <li>
-                <a href="./adopt.html">動物認養</a>                    
+                <a href="./adopt.html">動物訂閱</a>                    
             </li>
             <li>
                 <a href="./information.html">參觀資訊</a>
@@ -101,10 +102,12 @@
 
         <div class="p-new">
             <p>
-                活動名稱：2021 ZooBaby 自導式闖關活動
-                <br>活動時間：4月1日至4月30日
-                <br>活動說明：動物園每年有不少新出生的動物寶寶，此活動除了認識有哪些動物寶寶出生之外，也透過
-                <br>牠們來介紹該動物的生態習性與生存危機，朋友們趕緊趁連續假期來動物園走走認識牠們吧！
+                活動名稱：
+                <br>2021 ZooBaby 自導式闖關活動
+                <br>活動時間：
+                <br>4月1日至4月30日
+                <br>活動說明：
+                <br>動物園每年有不少新出生的動物寶寶，此活動除了認識有哪些動物寶寶出生之外，也透過牠們來介紹該動物的生態習性與生存危機，朋友們趕緊趁連續假期來動物園走走認識牠們吧！
                 <br>活動辦法：
                 <br>1.請至本園遊客服務中心索取「2021 ZooBaby 闖關學習單」(每日限量發放500份）。
                 <br>2.在指定的8種新生動物寶寶展示區前，閱讀活動看板，並在學習單上將正確答案對應的腳印塗滿。
@@ -169,6 +172,22 @@
                 ul22.classList.toggle("nav");
 
             });
+        });
+
+        let more = ul22.querySelectorAll("li")[1]
+
+        let mores = more.querySelector("img")
+
+        let ulmap = more.querySelectorAll("ul")
+
+        console.log(ulmap)
+
+        mores.addEventListener("click", function(){
+
+            ulmap[0].classList.toggle("dgrid");
+            ulmap[1].classList.toggle("dgrid");
+            mores.classList.toggle("rota");
+
         });
 
             

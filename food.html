@@ -23,7 +23,8 @@
                     <a href="./news.html">最新消息</a>
                 </li>
                 <li>
-                    <a href="./map.html">園區導覽</a>                
+                    <a href="./map.html">園區導覽</a>    
+                    <img src="./images/more.png" alt="" srcset="">             
                     
                     <ul class="park-area">
                         <li>地區</li>
@@ -47,7 +48,7 @@
                     <a href="./product.html">商品專區</a>
                 </li>
                 <li>
-                    <a href="./adopt.html">動物認養</a>                    
+                    <a href="./adopt.html">動物訂閱</a>                    
                 </li>
                 <li>
                     <a href="./information.html">參觀資訊</a>
@@ -94,8 +95,11 @@
 
     
         <main class="main">
-            <p>主廚推薦</p>
-
+            <p>主廚推薦 
+                <img src="./images/scroll.png" alt="" srcset="">
+                <input type="text" value="快來看看推薦甚麼餐點??">
+            </p>
+           
             <div class="food-group">
 
                 <div class="food">
@@ -264,6 +268,21 @@
                 });
             });
     
+            let more = ul22.querySelectorAll("li")[1]
+
+            let mores = more.querySelector("img")
+
+            let ulmap = more.querySelectorAll("ul")
+
+            console.log(ulmap)
+
+            mores.addEventListener("click", function(){
+
+                ulmap[0].classList.toggle("dgrid");
+                ulmap[1].classList.toggle("dgrid");
+                mores.classList.toggle("rota");
+
+            });
                 
         </script>
         

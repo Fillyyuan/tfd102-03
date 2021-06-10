@@ -23,7 +23,8 @@
                 <a href="./news.html">最新消息</a>
             </li>
             <li>
-                <a href="./map.html">園區導覽</a>                
+                <a href="./map.html">園區導覽</a>       
+                <img src="./images/more.png" alt="" srcset="">          
                 
                 <ul class="park-area">
                     <li>地區</li>
@@ -47,7 +48,7 @@
                 <a href="./product.html">商品專區</a>
             </li>
             <li>
-                <a href="./adopt.html">動物認養</a>                    
+                <a href="./adopt.html">動物訂閱</a>                    
             </li>
             <li>
                 <a href="./information.html">參觀資訊</a>
@@ -231,8 +232,7 @@
 
                 <img class="a12" src="./images/fortest/chef02.png" alt="">            
                 <p class="b12">
-                    主廚 : 林泉<br>
-                    
+                    主廚 : 林泉<br>                    
                     用心瞭解生產者、以及他們的栽種與培育方式，
                     以永續為核心與長遠的價值。這條路雖不好走，
                     卻也讓他們眾不同。林泉認為，台灣四季分明、
@@ -414,6 +414,22 @@
                 ul22.classList.toggle("nav");
 
             });
+        });
+
+        let more = ul22.querySelectorAll("li")[1]
+
+        let mores = more.querySelector("img")
+
+        let ulmap = more.querySelectorAll("ul")
+
+        console.log(ulmap)
+
+        mores.addEventListener("click", function(){
+
+            ulmap[0].classList.toggle("dgrid");
+            ulmap[1].classList.toggle("dgrid");
+            mores.classList.toggle("rota");
+
         });
 
             

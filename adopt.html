@@ -23,7 +23,8 @@
                 <a href="./news.html">最新消息</a>
             </li>
             <li>
-                <a href="./map.html">園區導覽</a>                
+                <a href="./map.html">園區導覽</a>   
+                <img src="./images/more.png" alt="" srcset="">              
                 
                 <ul class="park-area">
                     <li>地區</li>
@@ -47,7 +48,7 @@
                 <a href="./product.html">商品專區</a>
             </li>
             <li>
-                <a href="./adopt.html">動物認養</a>                    
+                <a href="./adopt.html">動物訂閱</a>                    
             </li>
             <li>
                 <a href="./information.html">參觀資訊</a>
@@ -115,7 +116,7 @@
                 全世界最南端也是最小的老虎最喜歡跟飼養員一起玩球了。
                 </p>
                 
-                <button type="button" class="ado"><img src="./images/inadopt/adopt.png" alt=""></button>
+                <button type="button" class="ado"><div>訂閱我!</div><img src="./images/inadopt/adopt.png" alt=""></button>
             </div>
 
             <div></div>
@@ -155,7 +156,7 @@
                     我可是世界上最高的動物喔，甚至我們的新生嬰兒都長約2米。跟我一起站的高高的看這世界吧
                 </p>
 
-                <button type="button" class="ado"><img src="./images/inadopt/adopt.png" alt=""></button>               
+                <button type="button" class="ado"><div>訂閱我!</div><img src="./images/inadopt/adopt.png" alt=""></button>               
                 </a>
             </div>
 
@@ -181,7 +182,7 @@
                     我可是陸地上最大的食肉動物，海豹、海象根本不是我的對手呢
                 </p>
 
-                <button type="button" class="ado"><img src="./images/inadopt/adopt.png" alt=""></button>               
+                <button type="button" class="ado"><div>訂閱我!</div><img src="./images/inadopt/adopt.png" alt=""></button>               
                 </a>
             </div>
 
@@ -219,7 +220,7 @@
                     我們築巢是會在岩石縫隙中或在沙子中挖出個洞，爸爸媽媽再合作進行育卵和育雛。
                 </p>
 
-                <button type="button" class="ado"><img src="./images/inadopt/adopt.png" alt=""></button>               
+                <button type="button" class="ado"><div>訂閱我!</div><img src="./images/inadopt/adopt.png" alt=""></button>               
                 </a>
             </div>
 
@@ -245,7 +246,7 @@
                     我們每個媽媽的小袋子都會撫養小寶寶約八個月。我們大大的尾巴是為了保持平衡而且我們可以跳長度超過8 m，高度超過2.5 m。
                 </p>
 
-                <button type="button" class="ado"><img src="./images/inadopt/adopt.png" alt=""></button>               
+                <button type="button" class="ado"><div>訂閱我!</div><img src="./images/inadopt/adopt.png" alt=""></button>               
                 </a>
             </div>
 
@@ -283,7 +284,7 @@
                     我主要棲息在各種環境中的森林中，從低地雨林到海拔2500 m的落葉林。我通常都是單獨行動。而身上的斑駁圖案看起來像雲呢。
                 </p>
 
-                <button type="button" class="ado"><img src="./images/inadopt/adopt.png" alt=""></button>               
+                <button type="button" class="ado"><div>訂閱我!</div><img src="./images/inadopt/adopt.png" alt=""></button>               
                 </a>
             </div>
 
@@ -413,6 +414,22 @@
 
                 ul22.classList.toggle("nav");
             });
+        });
+
+        let more = ul22.querySelectorAll("li")[1]
+
+        let mores = more.querySelector("img")
+
+        let ulmap = more.querySelectorAll("ul")
+
+        console.log(ulmap)
+
+        mores.addEventListener("click", function(){
+
+            ulmap[0].classList.toggle("dgrid");
+            ulmap[1].classList.toggle("dgrid");
+            mores.classList.toggle("rota");
+
         });
             
     </script>
