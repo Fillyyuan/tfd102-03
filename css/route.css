@@ -101,6 +101,10 @@
     width: 150px;
 }
 
+.animal-ann button > div{
+    position: relative;
+}
+
 .animal-ann button p{
     position: absolute;
     top: 0;
@@ -148,10 +152,15 @@ ul.park-route li a{
     background-image: url("../images/bgset/bg02.png");
 }
 
-.example img{
+.example > img{
     width: 200px;
     height: 200px;
     margin-right: 50px;
+}
+
+.example > div > p > img{
+    margin-left: 120px;    
+    transform: translateY(10%);
 }
 
 .example p{
@@ -181,8 +190,12 @@ ul.park-route li a{
     .example{
         flex-direction: column;
         top: 10%;
-        padding: 10px 20px 20px 20px;
-        
+        padding: 10px 20px 20px 20px;        
+    }
+
+    .example > div > p > img{  
+        margin-left: 160px;
+        transform: translateY(-630%);
     }
 }
 

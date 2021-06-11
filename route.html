@@ -107,13 +107,13 @@
                 <p>溫帶地區</p>
                 <div class="line"></div>
                 <div class="photo">
-                    <button type="button" class="btn">
+                    <button type="button" class="btnuu">
                         <div><img src="./images/inmaproute/temp/1.png" alt=""><p>了解我</p></div>
                         <div><img src="./images/inmaproute/temp/2.png" alt=""><p>了解我</p></div>
                         <div><img src="./images/inmaproute/temp/3.png" alt=""><p>了解我</p></div>
                         <div><img src="./images/inmaproute/temp/4.png" alt=""><p>了解我</p></div>
                     </button>
-                    <button type="button" class="btn02">
+                    <button type="button" class="btnuu">
                         <div><img src="./images/inmaproute/temp/5.png" alt=""><p>了解我</p></div>
                         <div><img src="./images/inmaproute/temp/6.png" alt=""><p>了解我</p></div>
                         <div><img src="./images/inmaproute/temp/7.png" alt=""><p>了解我</p></div>
@@ -126,7 +126,7 @@
                 <p>極帶地區</p>
                 <div class="line"></div>
                 <div class="photo">
-                    <button type="button" class="btn03">
+                    <button type="button" class="btnuu">
                         <div><img src="./images/inmaproute/polar/Intersection 23.png" alt=""><p>了解我</p></div>
                         <div><img src="./images/inmaproute/polar/Mask Group 5.png" alt=""><p>了解我</p></div>
                         <div><img src="./images/inmaproute/polar/Mask Group 6.png" alt=""><p>了解我</p></div>
@@ -141,7 +141,7 @@
     <div class="example">
         <img src="./images/inmaproute/expbear.png" alt="">
         <div>
-            <p>亞洲黑熊</p>
+            <p>亞洲黑熊 <img src="./images/close.png" alt=""></p>
             <div class="line-e"></div>           
 <pre>英    文： Asiatic black bear
 學    名： Ursus thibetanus
@@ -156,31 +156,61 @@
 
 
     <script>
-        let c = document.querySelector('.example')
-        let b = document.querySelector('.main')
-        
-        document.querySelector(".btn").onclick = function () {           
-            c.style.display = "flex"            
-            c.style.opacity = "1"   
-            b.style.opacity = ".5"
-        };
+        var btnuu = document.querySelectorAll("button.btnuu");
 
-        document.querySelector(".btn02").onclick = function () {           
-            c.style.display = "flex"            
-            c.style.opacity = "1"   
-            b.style.opacity = ".5"
-        };
+        var roo = document.documentElement
+        // console.log(roo)
 
-        document.querySelector(".btn03").onclick = function () {           
-            c.style.display = "flex"            
-            c.style.opacity = "1"   
-            b.style.opacity = ".5"
-        };
+        btnuu.forEach(element => {
+            // console.log(element)
+            let bcs = element.querySelectorAll("div")
+            // console.log(bcs)
+
+            bcs.forEach(element => {
+                // console.log(element)
+
+                let example = document.getElementsByClassName("example")[0];
+
+                let mains = document.getElementsByClassName("main")[0];
+
+                element.addEventListener("click", function(){
+
+                    example.style.display = "flex"
+
+                    mains.style.opacity = ".5"
+
+                });   
+                
+                let clos = example.querySelector("div > p > img");
+                // console.log(clos)
+                clos.addEventListener("click", function(){
+
+                    example.style.display = "none"
+
+                    mains.style.opacity = "1"
+
+                });
+
+            });
+        });
+
+        // document.addEventListener("click", function(){
+
+        //     console.log(this)
+        // });
+
+
+
+        // document.querySelector(".btn03").onclick = function () {           
+        //     c.style.display = "flex"            
+        //     c.style.opacity = "1"   
+        //     b.style.opacity = ".5"
+        // };
         
-        document.querySelector('.example').onmousedown = function () {
-            c.style.display = "none"
-            b.style.opacity = "1"
-        }
+        // document.querySelector('.example').onmousedown = function () {
+        //     c.style.display = "none"
+        //     b.style.opacity = "1"
+        // }
     </script>
 
     
@@ -246,7 +276,7 @@
 
         let ulmap = more.querySelectorAll("ul")
 
-        console.log(ulmap)
+        // console.log(ulmap)
 
         mores.addEventListener("click", function(){
 

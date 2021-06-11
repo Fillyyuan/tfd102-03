@@ -41,6 +41,18 @@ var shopcar = document.getElementsByClassName("btt")[0].children[0];
 
             var inp = btn_plus.previousElementSibling;
             // console.log(inp);
+
+
+            // 購物數字使用
+            var manypd = document.querySelectorAll("div.btt-c");
+            // console.log(manypd.length);
+
+            var qui = document.getElementsByClassName("qui")[0];
+            // console.log(qui)
+
+            // qui.innerHTML = manypd.length;
+
+            
             
             btn_plus.addEventListener("click", function(){
 
@@ -57,6 +69,15 @@ var shopcar = document.getElementsByClassName("btt")[0].children[0];
                     if(checks){
                         // console.log(btn_less.closest("div.btt-c"));
                         btn_less.closest("div.btt-c").remove();
+
+                        let manypds = document.querySelectorAll("div.btt-c");
+                        console.log(manypds);
+                        let quis = document.getElementsByClassName("qui")[0];
+                        // console.log(quis);
+                        quis.innerHTML = manypd.length - 1;
+                        if(manypd.length == 1){
+                            qui.classList.remove("lablo");
+                        }
                     }
                 }else{
                     let inp_value = inp.value
@@ -64,6 +85,15 @@ var shopcar = document.getElementsByClassName("btt")[0].children[0];
                     inp.value = parseInt(inp_value) - 1;
                 }
             });
+
+
+            qui.classList.add("lablo")
+
+            if(manypd.length == ""){
+                qui.classList.remove("lablo");
+            }else{
+                qui.innerHTML = manypd.length;
+            }
 
         });
 

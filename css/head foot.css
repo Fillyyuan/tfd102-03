@@ -220,6 +220,26 @@ ul.park-area li a, ul.park-route li a{
     display: none;
 }
 
+
+.header label{
+    position: relative;
+}
+
+.impcon > label > p.qui{
+    position: absolute;
+    right: -15px;
+    top: -10px;
+    background-color: white;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+    display: none;
+    margin: 0;
+}
+
+
 @media (max-width:991px){
     .header .hamburger {
         display: block;
@@ -349,6 +369,10 @@ ul.nav{
 .rota{
     transform: rotate(180deg);
     transition: 1s;
+}
+
+.lablo{
+    display: block !important;
 }
 
 
