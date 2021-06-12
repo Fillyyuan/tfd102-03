@@ -173,13 +173,15 @@
 
                 let mains = document.getElementsByClassName("main")[0];
 
-                element.addEventListener("click", function(){
+                element.addEventListener("click", function(e){
 
                     example.style.display = "flex"
 
                     mains.style.opacity = ".5"
 
-                    document.addEventListener("dblclick", function(e){
+                    e.stopPropagation();
+
+                    document.addEventListener("click", function(e){
                     // console.log(e.target)
 
                         if(!e.target.classList.contains("example")){
@@ -203,28 +205,9 @@
 
                 });
 
-                
-
             });
         });
-
-        // document.addEventListener("click", function(e){
-
-        //     console.log(e.target)
-        // });
-
-
-
-        // document.querySelector(".btn03").onclick = function () {           
-        //     c.style.display = "flex"            
-        //     c.style.opacity = "1"   
-        //     b.style.opacity = ".5"
-        // };
-        
-        // document.querySelector('.example').onmousedown = function () {
-        //     c.style.display = "none"
-        //     b.style.opacity = "1"
-        // }
+       
     </script>
 
     
