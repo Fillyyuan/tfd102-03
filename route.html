@@ -157,7 +157,7 @@
 
     <script>
         var btnuu = document.querySelectorAll("button.btnuu");
-
+        // console.log(btnuu)
         var roo = document.documentElement
         // console.log(roo)
 
@@ -179,6 +179,18 @@
 
                     mains.style.opacity = ".5"
 
+                    document.addEventListener("dblclick", function(e){
+                    // console.log(e.target)
+
+                        if(!e.target.classList.contains("example")){
+                            
+                            example.style.display = "none"
+
+                            mains.style.opacity = "1"
+                        }
+
+                    });
+
                 });   
                 
                 let clos = example.querySelector("div > p > img");
@@ -191,12 +203,14 @@
 
                 });
 
+                
+
             });
         });
 
-        // document.addEventListener("click", function(){
+        // document.addEventListener("click", function(e){
 
-        //     console.log(this)
+        //     console.log(e.target)
         // });
 
 
